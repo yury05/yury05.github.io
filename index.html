@@ -1,0 +1,2293 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ks舞团 夏柏 - 官方视频门户 | 街舞创作与社区</title>
+<meta name="description" content="ks舞团 夏柏 官方网站，这里是街舞创作者与企业共建的高品质视频社区，持续发布原创街舞作品、幕后纪实与教学内容。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23121216'/%3E%3Cpath d='M20 44 L32 18 L44 44 Z' fill='none' stroke='%23ff5a1f' stroke-width='4' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='38' r='4' fill='%23ff5a1f'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ksx-ink:#121216;
+  --ksx-ink-soft:#1d1d24;
+  --ksx-paper:#f4f2ee;
+  --ksx-paper-2:#e9e5dd;
+  --ksx-accent:#ff5a1f;
+  --ksx-accent-2:#ffb703;
+  --ksx-line:#d8d3c9;
+  --ksx-muted:#6e6a63;
+  --ksx-white:#ffffff;
+  --ksx-radius:14px;
+  --ksx-max:1180px;
+  --ksx-sticky:0px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:118px;}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  color:var(--ksx-ink);
+  background:var(--ksx-paper);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4,p,ul,ol,figure,blockquote{margin:0;}
+ul,ol{padding:0;list-style:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+.ksx-wrap{max-width:var(--ksx-max);margin:0 auto;padding:0 24px;}
+.ksx-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+
+/* ---------- 吸顶容器：公告条 + 页头 ---------- */
+.ksx-sticky-stack{
+  position:sticky;
+  top:0;
+  z-index:60;
+  background:var(--ksx-paper);
+  box-shadow:0 1px 0 var(--ksx-line);
+}
+.ksx-notice{
+  background:var(--ksx-ink);
+  color:#f0ece4;
+  font-size:13.5px;
+  letter-spacing:.2px;
+}
+.ksx-notice .ksx-wrap{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  min-height:40px;
+  padding-top:6px;
+  padding-bottom:6px;
+  flex-wrap:wrap;
+}
+.ksx-notice-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  background:var(--ksx-accent);
+  color:#fff;
+  font-weight:700;
+  font-size:12px;
+  padding:2px 10px;
+  border-radius:999px;
+  flex:0 0 auto;
+}
+.ksx-notice-badge::before{
+  content:"";
+  width:6px;height:6px;border-radius:50%;
+  background:#fff;
+  animation:ksx-pulse 1.8s infinite;
+}
+@keyframes ksx-pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
+.ksx-notice-text{flex:1 1 320px;min-width:0;}
+.ksx-notice-link{
+  flex:0 0 auto;
+  color:var(--ksx-accent-2);
+  font-weight:600;
+  border-bottom:1px dashed rgba(255,183,3,.6);
+  padding-bottom:1px;
+}
+.ksx-notice-link:hover{color:#fff;border-bottom-color:#fff;}
+
+/* ---------- 页头 ---------- */
+.ksx-header{
+  background:var(--ksx-paper);
+  border-bottom:1px solid var(--ksx-line);
+}
+.ksx-header .ksx-wrap{
+  display:flex;
+  align-items:center;
+  gap:22px;
+  min-height:70px;
+}
+.ksx-brand{
+  display:flex;
+  align-items:center;
+  gap:11px;
+  flex:0 0 auto;
+}
+.ksx-brand-mark{
+  width:40px;height:40px;
+  border-radius:11px;
+  background:linear-gradient(145deg,#121216 0%,#2a2a34 100%);
+  display:grid;place-items:center;
+  flex:0 0 auto;
+}
+.ksx-brand-mark svg{width:24px;height:24px;}
+.ksx-brand-name{
+  font-weight:800;
+  font-size:19px;
+  letter-spacing:.5px;
+  line-height:1.15;
+}
+.ksx-brand-name span{color:var(--ksx-accent);}
+.ksx-brand-sub{
+  display:block;
+  font-size:11px;
+  color:var(--ksx-muted);
+  font-weight:500;
+  letter-spacing:1.6px;
+  text-transform:uppercase;
+}
+.ksx-nav{
+  display:flex;
+  align-items:center;
+  gap:4px;
+  flex:1 1 auto;
+  margin-left:8px;
+}
+.ksx-nav a{
+  font-size:14.5px;
+  font-weight:600;
+  padding:8px 13px;
+  border-radius:9px;
+  color:#3a3733;
+  transition:background .18s,color .18s;
+  white-space:nowrap;
+}
+.ksx-nav a:hover{background:var(--ksx-paper-2);color:var(--ksx-ink);}
+.ksx-nav a.ksx-nav-cta{
+  color:#fff;
+  background:var(--ksx-accent);
+  margin-left:4px;
+}
+.ksx-nav a.ksx-nav-cta:hover{background:#e04a12;color:#fff;}
+.ksx-head-tools{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex:0 0 auto;
+}
+.ksx-search{
+  position:relative;
+  width:210px;
+}
+.ksx-search input{
+  width:100%;
+  height:38px;
+  border-radius:10px;
+  border:1px solid var(--ksx-line);
+  background:#fbfaf7;
+  padding:0 36px 0 13px;
+  font-size:13.5px;
+  color:var(--ksx-ink);
+  outline:none;
+  transition:border-color .18s, box-shadow .18s;
+}
+.ksx-search input:focus{
+  border-color:var(--ksx-accent);
+  box-shadow:0 0 0 3px rgba(255,90,31,.14);
+}
+.ksx-search-btn{
+  position:absolute;
+  right:4px;top:4px;
+  width:30px;height:30px;
+  border-radius:8px;
+  display:grid;place-items:center;
+  background:var(--ksx-ink);
+  color:#fff;
+  transition:background .18s;
+}
+.ksx-search-btn:hover{background:var(--ksx-accent);}
+.ksx-search-hint{
+  display:none;
+  position:absolute;
+  top:44px;left:0;right:0;
+  background:#fff;
+  border:1px solid var(--ksx-line);
+  border-radius:11px;
+  box-shadow:0 16px 34px rgba(18,18,22,.14);
+  padding:6px;
+  z-index:80;
+}
+.ksx-search-hint.ksx-open{display:block;}
+.ksx-search-hint p{
+  padding:9px 11px;
+  border-radius:8px;
+  font-size:13px;
+  color:#3a3733;
+  display:flex;justify-content:space-between;gap:10px;
+}
+.ksx-search-hint p span{color:var(--ksx-muted);font-size:12px;}
+.ksx-search-hint p:hover{background:var(--ksx-paper-2);}
+.ksx-search-empty{padding:12px 11px;font-size:13px;color:var(--ksx-muted);}
+.ksx-burger{
+  display:none;
+  width:40px;height:38px;
+  border:1px solid var(--ksx-line);
+  border-radius:10px;
+  place-items:center;
+  background:#fbfaf7;
+}
+.ksx-burger span{
+  display:block;width:17px;height:2px;background:var(--ksx-ink);
+  border-radius:2px;position:relative;
+}
+.ksx-burger span::before,
+.ksx-burger span::after{
+  content:"";position:absolute;left:0;width:17px;height:2px;background:var(--ksx-ink);border-radius:2px;
+}
+.ksx-burger span::before{top:-6px;}
+.ksx-burger span::after{top:6px;}
+
+/* ---------- 首屏：左文右侧大图 + 数据条 ---------- */
+.ksx-hero{padding:44px 0 56px;background:
+  radial-gradient(900px 340px at 82% -12%, rgba(255,183,3,.28), transparent 62%),
+  radial-gradient(700px 320px at 6% 4%, rgba(255,90,31,.14), transparent 60%),
+  var(--ksx-paper);
+  position:relative;
+  overflow:hidden;
+}
+.ksx-hero::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--ksx-line);
+}
+.ksx-hero-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.03fr) minmax(0,.97fr);
+  gap:48px;
+  align-items:center;
+}
+.ksx-eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:12.5px;
+  font-weight:700;
+  letter-spacing:1.4px;
+  color:var(--ksx-accent);
+  background:rgba(255,90,31,.1);
+  border:1px solid rgba(255,90,31,.24);
+  padding:5px 12px;
+  border-radius:999px;
+  margin-bottom:20px;
+}
+.ksx-eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ksx-accent);}
+.ksx-hero h1{
+  font-size:clamp(42px,6.2vw,74px);
+  line-height:1.02;
+  font-weight:900;
+  letter-spacing:-1.4px;
+  margin-bottom:8px;
+}
+.ksx-hero h1 em{
+  font-style:normal;
+  color:var(--ksx-accent);
+}
+.ksx-hero-tag{
+  font-size:clamp(17px,2.1vw,21px);
+  font-weight:700;
+  color:var(--ksx-ink-soft);
+  margin-bottom:18px;
+  letter-spacing:.4px;
+}
+.ksx-hero-lead{
+  font-size:15.5px;
+  color:#4a463f;
+  max-width:560px;
+  margin-bottom:14px;
+}
+.ksx-hero-lead strong{color:var(--ksx-ink);}
+.ksx-hero-desc{
+  font-size:14.5px;
+  color:#5c574f;
+  max-width:560px;
+  margin-bottom:26px;
+}
+.ksx-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px;}
+.ksx-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  height:46px;
+  padding:0 22px;
+  border-radius:11px;
+  font-size:14.5px;
+  font-weight:700;
+  letter-spacing:.3px;
+  transition:transform .16s,background .18s,box-shadow .18s,border-color .18s;
+}
+.ksx-btn:hover{transform:translateY(-2px);}
+.ksx-btn-primary{background:var(--ksx-accent);color:#fff;box-shadow:0 8px 20px rgba(255,90,31,.28);}
+.ksx-btn-primary:hover{background:#e04a12;}
+.ksx-btn-dark{background:var(--ksx-ink);color:#fff;}
+.ksx-btn-dark:hover{background:#000;}
+.ksx-btn-ghost{background:transparent;color:var(--ksx-ink);border:1.5px solid var(--ksx-ink);}
+.ksx-btn-ghost:hover{background:var(--ksx-ink);color:#fff;}
+.ksx-hero-stats{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  border-top:1px solid var(--ksx-line);
+  padding-top:22px;
+  max-width:560px;
+}
+.ksx-hero-stat b{
+  display:block;
+  font-size:26px;
+  font-weight:900;
+  letter-spacing:-.6px;
+  line-height:1.15;
+  color:var(--ksx-ink);
+  font-variant-numeric:tabular-nums;
+}
+.ksx-hero-stat b i{font-style:normal;font-size:14px;color:var(--ksx-accent);margin-left:2px;font-weight:800;}
+.ksx-hero-stat small{display:block;font-size:12.5px;color:var(--ksx-muted);letter-spacing:.4px;margin-top:2px;}
+.ksx-hero-visual{position:relative;}
+.ksx-hero-figure{
+  border-radius:20px;
+  overflow:hidden;
+  background:var(--ksx-ink);
+  box-shadow:0 26px 60px -22px rgba(18,18,22,.5);
+  position:relative;
+}
+.ksx-hero-figure img{width:100%;aspect-ratio:5/4;object-fit:cover;}
+.ksx-play-badge{
+  position:absolute;
+  left:18px;bottom:18px;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  background:rgba(18,18,22,.82);
+  color:#fff;
+  font-size:12.5px;
+  font-weight:700;
+  padding:8px 14px 8px 10px;
+  border-radius:999px;
+  backdrop-filter:blur(6px);
+}
+.ksx-play-badge i{
+  width:22px;height:22px;border-radius:50%;
+  background:var(--ksx-accent);
+  display:grid;place-items:center;
+  flex:0 0 auto;
+}
+.ksx-hero-corner{
+  position:absolute;
+  top:-14px;right:-14px;
+  width:74px;height:74px;
+  border-radius:18px;
+  background:var(--ksx-accent-2);
+  display:grid;place-items:center;
+  font-size:11.5px;
+  font-weight:800;
+  color:var(--ksx-ink);
+  text-align:center;
+  line-height:1.25;
+  box-shadow:0 12px 26px rgba(18,18,22,.18);
+  z-index:2;
+}
+
+/* ---------- 通用 section ---------- */
+.ksx-section{padding:66px 0;}
+.ksx-section-tight{padding:48px 0;}
+.ksx-sec-head{margin-bottom:34px;max-width:760px;}
+.ksx-sec-head h2{
+  font-size:clamp(26px,3.6vw,38px);
+  font-weight:900;
+  letter-spacing:-.9px;
+  line-height:1.15;
+  margin-bottom:10px;
+}
+.ksx-sec-head h2 em{font-style:normal;color:var(--ksx-accent);}
+.ksx-sec-head p{font-size:15px;color:#57524a;}
+.ksx-kicker{
+  display:inline-block;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:2.2px;
+  color:var(--ksx-muted);
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+
+/* ---------- 焦点内容：一幅重点大图 + 文字列表 ---------- */
+.ksx-focus-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.18fr) minmax(0,1fr);
+  gap:34px;
+  align-items:start;
+}
+.ksx-focus-main{
+  background:#fff;
+  border-radius:var(--ksx-radius);
+  overflow:hidden;
+  border:1px solid var(--ksx-line);
+  box-shadow:0 16px 40px -26px rgba(18,18,22,.32);
+}
+.ksx-focus-main img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+.ksx-focus-body{padding:24px 26px 26px;}
+.ksx-tagrow{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:13px;}
+.ksx-tag{
+  font-size:11.5px;
+  font-weight:700;
+  letter-spacing:.4px;
+  padding:3px 9px;
+  border-radius:6px;
+  background:var(--ksx-paper-2);
+  color:#4a463f;
+}
+.ksx-tag-hot{background:rgba(255,90,31,.14);color:#c2400d;}
+.ksx-tag-gold{background:rgba(255,183,3,.22);color:#7a5600;}
+.ksx-focus-main h3{
+  font-size:22px;
+  font-weight:800;
+  line-height:1.35;
+  letter-spacing:-.3px;
+  margin-bottom:10px;
+}
+.ksx-focus-main p{font-size:14px;color:#57524a;margin-bottom:16px;}
+.ksx-meta{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px 16px;
+  font-size:12.5px;
+  color:var(--ksx-muted);
+  margin-bottom:16px;
+}
+.ksx-meta b{color:var(--ksx-ink);font-weight:700;}
+.ksx-actions{display:flex;flex-wrap:wrap;gap:8px;}
+.ksx-mini-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  height:34px;
+  padding:0 13px;
+  border-radius:9px;
+  border:1px solid var(--ksx-line);
+  background:#fbfaf7;
+  font-size:12.5px;
+  font-weight:700;
+  color:#3a3733;
+  transition:background .16s,border-color .16s,color .16s;
+}
+.ksx-mini-btn:hover{background:var(--ksx-ink);color:#fff;border-color:var(--ksx-ink);}
+.ksx-mini-btn.ksx-on{background:rgba(255,90,31,.12);border-color:rgba(255,90,31,.4);color:#c2400d;}
+.ksx-mini-btn.ksx-on svg{fill:var(--ksx-accent);stroke:var(--ksx-accent);}
+.ksx-mini-btn svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;}
+
+.ksx-focus-list{display:flex;flex-direction:column;gap:2px;}
+.ksx-focus-item{
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr);
+  gap:14px;
+  padding:16px 4px;
+  border-bottom:1px dashed var(--ksx-line);
+  transition:background .16s;
+}
+.ksx-focus-item:last-child{border-bottom:none;}
+.ksx-focus-item:hover{background:rgba(255,255,255,.72);}
+.ksx-focus-num{
+  font-size:13px;
+  font-weight:900;
+  color:var(--ksx-accent);
+  width:26px;
+  padding-top:2px;
+  font-variant-numeric:tabular-nums;
+}
+.ksx-focus-item h3{
+  font-size:15.5px;
+  font-weight:800;
+  line-height:1.45;
+  margin-bottom:4px;
+}
+.ksx-focus-item p{font-size:13px;color:#5c574f;margin-bottom:6px;}
+.ksx-focus-item .ksx-meta{margin:0;font-size:12px;gap:6px 12px;}
+
+/* ---------- 关键词深度解析 ---------- */
+.ksx-analyze{
+  background:var(--ksx-ink);
+  color:#e8e3da;
+  border-radius:20px;
+  padding:52px 46px;
+  position:relative;
+  overflow:hidden;
+}
+.ksx-analyze::before{
+  content:"夏柏";
+  position:absolute;
+  right:-10px;top:-34px;
+  font-size:190px;
+  font-weight:900;
+  line-height:1;
+  color:rgba(255,255,255,.035);
+  letter-spacing:-10px;
+  pointer-events:none;
+}
+.ksx-analyze h2{
+  color:#fff;
+  font-size:clamp(25px,3.4vw,34px);
+  font-weight:900;
+  letter-spacing:-.6px;
+  margin-bottom:14px;
+}
+.ksx-analyze h2 em{font-style:normal;color:var(--ksx-accent);}
+.ksx-analyze > p{font-size:14.5px;color:#b6b0a6;max-width:820px;margin-bottom:30px;}
+.ksx-analyze-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:28px 40px;
+  position:relative;
+  z-index:1;
+}
+.ksx-analyze-grid article h3{
+  font-size:17px;
+  font-weight:800;
+  color:#fff;
+  margin-bottom:9px;
+  display:flex;
+  align-items:baseline;
+  gap:9px;
+}
+.ksx-analyze-grid article h3::before{
+  content:"";
+  width:14px;height:2px;
+  background:var(--ksx-accent);
+  flex:0 0 auto;
+  transform:translateY(-4px);
+}
+.ksx-analyze-grid article p{font-size:14px;color:#b6b0a6;text-align:justify;}
+.ksx-analyze-grid article p strong{color:#f3efe7;font-weight:700;}
+.ksx-analyze-foot{
+  margin-top:30px;
+  padding-top:22px;
+  border-top:1px solid rgba(255,255,255,.12);
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  align-items:center;
+  font-size:13px;
+  color:#8f8a81;
+  position:relative;
+  z-index:1;
+}
+.ksx-analyze-foot b{color:var(--ksx-accent-2);font-size:13px;}
+
+/* ---------- 视频流：三列等高卡片 ---------- */
+.ksx-video-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:22px;
+}
+.ksx-video-card{
+  background:#fff;
+  border:1px solid var(--ksx-line);
+  border-radius:var(--ksx-radius);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  transition:transform .2s, box-shadow .2s, border-color .2s;
+}
+.ksx-video-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 20px 38px -24px rgba(18,18,22,.4);
+  border-color:#c9c2b5;
+}
+.ksx-video-thumb{position:relative;background:var(--ksx-paper-2);overflow:hidden;}
+.ksx-video-thumb img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .45s;}
+.ksx-video-card:hover .ksx-video-thumb img{transform:scale(1.04);}
+.ksx-video-dur{
+  position:absolute;right:9px;bottom:9px;
+  background:rgba(18,18,22,.82);
+  color:#fff;font-size:11px;font-weight:700;
+  padding:2px 7px;border-radius:5px;
+  letter-spacing:.4px;
+}
+.ksx-video-body{padding:17px 18px 18px;display:flex;flex-direction:column;flex:1 1 auto;}
+.ksx-video-body h3{
+  font-size:15.5px;
+  font-weight:800;
+  line-height:1.42;
+  margin-bottom:7px;
+  letter-spacing:-.15px;
+}
+.ksx-video-body p{
+  font-size:13px;
+  color:#5c574f;
+  margin-bottom:12px;
+  flex:1 1 auto;
+}
+.ksx-video-body .ksx-meta{font-size:12px;gap:5px 11px;margin-bottom:12px;}
+.ksx-video-body .ksx-tagrow{margin-bottom:10px;}
+
+/* ---------- 专题企划 ---------- */
+.ksx-topic-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
+  gap:22px;
+}
+.ksx-topic-card{
+  background:#fffdf9;
+  border:1px solid var(--ksx-line);
+  border-radius:var(--ksx-radius);
+  padding:24px 22px;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+}
+.ksx-topic-card.ksx-topic-lead{
+  background:linear-gradient(165deg,#fff 0%,#fff6ee 100%);
+  border-color:#eecbb4;
+  grid-row:span 1;
+}
+.ksx-topic-status{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:11.5px;
+  font-weight:800;
+  letter-spacing:.6px;
+  color:#1f7a4d;
+  background:rgba(31,122,77,.1);
+  border-radius:999px;
+  padding:3px 10px;
+  align-self:flex-start;
+  margin-bottom:14px;
+}
+.ksx-topic-status.ksx-soon{color:#a26100;background:rgba(255,183,3,.18);}
+.ksx-topic-card h3{
+  font-size:19px;
+  font-weight:900;
+  letter-spacing:-.3px;
+  margin-bottom:8px;
+  line-height:1.3;
+}
+.ksx-topic-card > p{font-size:13.5px;color:#5c574f;margin-bottom:16px;}
+.ksx-topic-list{display:flex;flex-direction:column;gap:0;margin-top:auto;}
+.ksx-topic-list li{
+  display:flex;
+  gap:9px;
+  align-items:flex-start;
+  font-size:13px;
+  color:#423e38;
+  padding:8px 0;
+  border-top:1px dashed var(--ksx-line);
+}
+.ksx-topic-list li i{
+  font-style:normal;
+  color:var(--ksx-accent);
+  font-weight:900;
+  font-size:11px;
+  padding-top:3px;
+  flex:0 0 auto;
+}
+.ksx-topic-figure{margin-bottom:16px;border-radius:10px;overflow:hidden;border:1px solid var(--ksx-line);}
+.ksx-topic-figure img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+
+/* ---------- 作者矩阵：双列简介 ---------- */
+.ksx-author-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:20px;
+}
+.ksx-author-card{
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr);
+  gap:16px;
+  background:#fff;
+  border:1px solid var(--ksx-line);
+  border-radius:var(--ksx-radius);
+  padding:20px;
+  transition:border-color .2s, box-shadow .2s;
+}
+.ksx-author-card:hover{border-color:#c9c2b5;box-shadow:0 14px 30px -24px rgba(18,18,22,.45);}
+.ksx-avatar{
+  width:56px;height:56px;
+  border-radius:16px;
+  display:grid;place-items:center;
+  font-weight:900;
+  font-size:20px;
+  color:#fff;
+  flex:0 0 auto;
+  letter-spacing:-.5px;
+}
+.ksx-author-info h3{
+  font-size:16.5px;
+  font-weight:900;
+  margin-bottom:2px;
+  display:flex;
+  align-items:center;
+  gap:7px;
+  flex-wrap:wrap;
+}
+.ksx-author-role{
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.5px;
+  color:var(--ksx-accent);
+  background:rgba(255,90,31,.1);
+  border-radius:5px;
+  padding:1px 6px;
+}
+.ksx-author-stats{
+  font-size:12px;
+  color:var(--ksx-muted);
+  margin-bottom:9px;
+  font-variant-numeric:tabular-nums;
+}
+.ksx-author-stats b{color:var(--ksx-ink);font-weight:800;}
+.ksx-author-info p{font-size:13px;color:#57524a;line-height:1.7;}
+
+/* ---------- 榜单 ---------- */
+.ksx-rank-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px;}
+.ksx-rank-tab{
+  height:36px;padding:0 16px;
+  border-radius:9px;
+  border:1px solid var(--ksx-line);
+  background:#fff;
+  font-size:13px;font-weight:700;color:#4a463f;
+  transition:all .16s;
+}
+.ksx-rank-tab.ksx-active{background:var(--ksx-ink);color:#fff;border-color:var(--ksx-ink);}
+.ksx-rank-list{
+  background:#fff;
+  border:1px solid var(--ksx-line);
+  border-radius:var(--ksx-radius);
+  overflow:hidden;
+}
+.ksx-rank-row{
+  display:grid;
+  grid-template-columns:44px minmax(0,1fr) auto auto;
+  gap:16px;
+  align-items:center;
+  padding:15px 20px;
+  border-bottom:1px solid #efeae1;
+  transition:background .16s;
+}
+.ksx-rank-row:last-child{border-bottom:none;}
+.ksx-rank-row:hover{background:#fdfbf7;}
+.ksx-rank-no{
+  font-size:16px;font-weight:900;
+  color:#b3ada2;
+  font-variant-numeric:tabular-nums;
+  letter-spacing:-.5px;
+}
+.ksx-rank-row:nth-child(1) .ksx-rank-no,
+.ksx-rank-row:nth-child(2) .ksx-rank-no,
+.ksx-rank-row:nth-child(3) .ksx-rank-no{color:var(--ksx-accent);}
+.ksx-rank-title{font-size:14.5px;font-weight:700;line-height:1.4;}
+.ksx-rank-title small{display:block;font-size:12px;font-weight:500;color:var(--ksx-muted);margin-top:2px;}
+.ksx-rank-heat{
+  font-size:12.5px;font-weight:800;
+  color:#c2400d;
+  font-variant-numeric:tabular-nums;
+  white-space:nowrap;
+}
+.ksx-rank-trend{font-size:11.5px;color:var(--ksx-muted);white-space:nowrap;}
+
+/* ---------- 评价：双列短评 ---------- */
+.ksx-review-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+}
+.ksx-review{
+  background:#fff;
+  border:1px solid var(--ksx-line);
+  border-radius:var(--ksx-radius);
+  padding:20px 21px;
+  display:flex;
+  flex-direction:column;
+  gap:11px;
+  transition:border-color .2s;
+}
+.ksx-review:hover{border-color:#c9c2b5;}
+.ksx-review-top{display:flex;align-items:center;gap:11px;}
+.ksx-review-av{
+  width:38px;height:38px;border-radius:50%;
+  display:grid;place-items:center;
+  font-size:14px;font-weight:900;color:#fff;
+  flex:0 0 auto;
+}
+.ksx-review-name{font-size:13.5px;font-weight:800;}
+.ksx-review-when{font-size:11.5px;color:var(--ksx-muted);}
+.ksx-stars{margin-left:auto;color:var(--ksx-accent-2);font-size:12px;letter-spacing:1px;white-space:nowrap;}
+.ksx-review p{font-size:13.5px;color:#423e38;line-height:1.72;}
+.ksx-review-foot{font-size:12px;color:var(--ksx-muted);display:flex;gap:14px;flex-wrap:wrap;}
+
+/* ---------- FAQ ---------- */
+.ksx-faq{background:#fff;border:1px solid var(--ksx-line);border-radius:var(--ksx-radius);overflow:hidden;}
+.ksx-faq details{border-bottom:1px solid #efeae1;}
+.ksx-faq details:last-child{border-bottom:none;}
+.ksx-faq summary{
+  list-style:none;
+  cursor:pointer;
+  padding:17px 22px;
+  font-size:14.5px;
+  font-weight:800;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  transition:background .16s;
+}
+.ksx-faq summary::-webkit-details-marker{display:none;}
+.ksx-faq summary:hover{background:#fdfbf7;}
+.ksx-faq summary::after{
+  content:"+";
+  font-size:19px;
+  font-weight:700;
+  color:var(--ksx-accent);
+  line-height:1;
+  flex:0 0 auto;
+}
+.ksx-faq details[open] summary::after{content:"−";}
+.ksx-faq details[open] summary{background:#fdfbf7;}
+.ksx-faq-body{padding:0 22px 19px;font-size:13.5px;color:#57524a;line-height:1.78;}
+
+/* ---------- 企业动态 + 合作墙 ---------- */
+.ksx-split{
+  display:grid;
+  grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);
+  gap:34px;
+  align-items:start;
+}
+.ksx-news{background:#fff;border:1px solid var(--ksx-line);border-radius:var(--ksx-radius);padding:6px 22px;}
+.ksx-news li{
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr) auto;
+  gap:14px;
+  align-items:baseline;
+  padding:16px 0;
+  border-bottom:1px dashed var(--ksx-line);
+}
+.ksx-news li:last-child{border-bottom:none;}
+.ksx-news-date{
+  font-size:12px;font-weight:800;
+  color:var(--ksx-accent);
+  font-variant-numeric:tabular-nums;
+  white-space:nowrap;
+}
+.ksx-news h3{font-size:14.5px;font-weight:800;line-height:1.45;}
+.ksx-news h3 small{display:block;font-size:12.5px;font-weight:500;color:var(--ksx-muted);margin-top:3px;line-height:1.6;}
+.ksx-news-type{
+  font-size:11px;font-weight:800;color:#4a463f;
+  background:var(--ksx-paper-2);border-radius:5px;
+  padding:2px 7px;white-space:nowrap;
+}
+.ksx-partner-wall{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+.ksx-partner{
+  background:#fff;
+  border:1px solid var(--ksx-line);
+  border-radius:11px;
+  padding:17px 15px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:13px;
+  font-weight:800;
+  transition:border-color .18s,transform .18s;
+}
+.ksx-partner:hover{border-color:var(--ksx-accent);transform:translateY(-2px);}
+.ksx-partner-dot{
+  width:9px;height:9px;border-radius:3px;
+  background:var(--ksx-accent);
+  transform:rotate(45deg);
+  flex:0 0 auto;
+}
+
+/* ---------- 投稿 CTA ---------- */
+.ksx-cta{
+  background:linear-gradient(120deg,#121216 0%,#26262f 100%);
+  color:#fff;
+  border-radius:20px;
+  padding:46px 44px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:28px;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+}
+.ksx-cta::after{
+  content:"";
+  position:absolute;right:-60px;top:-60px;
+  width:260px;height:260px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,90,31,.4),transparent 68%);
+  pointer-events:none;
+}
+.ksx-cta h2{font-size:clamp(23px,3.2vw,31px);font-weight:900;letter-spacing:-.6px;margin-bottom:9px;}
+.ksx-cta p{font-size:14px;color:#b6b0a6;max-width:620px;}
+.ksx-cta .ksx-hero-actions{margin:0;position:relative;z-index:1;}
+
+/* ---------- 页脚 ---------- */
+.ksx-footer{background:#121216;color:#9d988f;padding:52px 0 26px;margin-top:20px;}
+.ksx-footer-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.5fr) repeat(3,minmax(0,1fr));
+  gap:34px;
+  padding-bottom:34px;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+.ksx-footer-brand{display:flex;align-items:center;gap:11px;margin-bottom:15px;}
+.ksx-footer-brand .ksx-brand-name{color:#fff;font-size:18px;}
+.ksx-footer-brand .ksx-brand-sub{color:#6f6a62;}
+.ksx-footer p{font-size:13px;line-height:1.85;max-width:340px;}
+.ksx-footer h4{color:#fff;font-size:13px;font-weight:800;letter-spacing:1px;margin-bottom:13px;}
+.ksx-footer li{font-size:13px;padding:5px 0;}
+.ksx-footer li a:hover{color:var(--ksx-accent-2);}
+.ksx-footer-bottom{
+  padding-top:22px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 24px;
+  align-items:center;
+  justify-content:space-between;
+  font-size:12.5px;
+  color:#716c64;
+}
+.ksx-footer-bottom .ksx-footer-links{display:flex;gap:18px;flex-wrap:wrap;}
+.ksx-footer-bottom a:hover{color:#fff;}
+
+/* ---------- 弹窗 / Toast / 回到顶部 ---------- */
+.ksx-modal{
+  position:fixed;inset:0;
+  background:rgba(14,14,18,.55);
+  backdrop-filter:blur(3px);
+  z-index:200;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:22px;
+}
+.ksx-modal.ksx-open{display:flex;}
+.ksx-modal-card{
+  background:#fff;
+  border-radius:16px;
+  max-width:470px;
+  width:100%;
+  padding:26px 26px 22px;
+  position:relative;
+  box-shadow:0 30px 70px -20px rgba(0,0,0,.5);
+  max-height:86vh;
+  overflow:auto;
+}
+.ksx-modal-card h3{font-size:19px;font-weight:900;margin-bottom:6px;letter-spacing:-.3px;}
+.ksx-modal-card > p{font-size:13.5px;color:var(--ksx-muted);margin-bottom:16px;}
+.ksx-modal-close{
+  position:absolute;right:14px;top:12px;
+  width:32px;height:32px;border-radius:9px;
+  display:grid;place-items:center;
+  font-size:18px;color:#6e6a63;
+  background:var(--ksx-paper-2);
+}
+.ksx-modal-close:hover{background:var(--ksx-ink);color:#fff;}
+.ksx-field{margin-bottom:13px;}
+.ksx-field label{display:block;font-size:12.5px;font-weight:800;margin-bottom:5px;color:#3a3733;}
+.ksx-field input,.ksx-field textarea,.ksx-field select{
+  width:100%;
+  border:1px solid var(--ksx-line);
+  border-radius:9px;
+  padding:10px 12px;
+  font-size:13.5px;
+  font-family:inherit;
+  color:var(--ksx-ink);
+  background:#fbfaf7;
+  outline:none;
+  transition:border-color .16s,box-shadow .16s;
+}
+.ksx-field input:focus,.ksx-field textarea:focus,.ksx-field select:focus{
+  border-color:var(--ksx-accent);
+  box-shadow:0 0 0 3px rgba(255,90,31,.13);
+}
+.ksx-field textarea{resize:vertical;min-height:92px;}
+.ksx-modal .ksx-btn{width:100%;margin-top:4px;}
+.ksx-modal-stars{display:flex;gap:7px;font-size:26px;color:#d8d3c9;margin-bottom:16px;}
+.ksx-modal-stars span{cursor:pointer;transition:color .12s,transform .12s;}
+.ksx-modal-stars span:hover{transform:scale(1.12);}
+.ksx-modal-stars span.ksx-lit{color:var(--ksx-accent-2);}
+
+.ksx-toast{
+  position:fixed;
+  left:50%;bottom:34px;
+  transform:translate(-50%,18px);
+  background:#121216;
+  color:#fff;
+  font-size:13.5px;
+  font-weight:600;
+  padding:11px 20px;
+  border-radius:11px;
+  box-shadow:0 16px 40px -14px rgba(0,0,0,.6);
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .25s,transform .25s;
+  z-index:300;
+  max-width:82vw;
+  text-align:center;
+}
+.ksx-toast.ksx-show{opacity:1;transform:translate(-50%,0);}
+
+.ksx-top{
+  position:fixed;
+  right:22px;bottom:24px;
+  width:46px;height:46px;
+  border-radius:13px;
+  background:var(--ksx-ink);
+  color:#fff;
+  display:grid;place-items:center;
+  box-shadow:0 12px 26px -12px rgba(18,18,22,.7);
+  opacity:0;visibility:hidden;
+  transform:translateY(10px);
+  transition:opacity .22s,transform .22s,visibility .22s,background .18s;
+  z-index:120;
+  font-size:17px;
+}
+.ksx-top.ksx-show{opacity:1;visibility:visible;transform:translateY(0);}
+.ksx-top:hover{background:var(--ksx-accent);}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1024px){
+  .ksx-nav{display:none;}
+  .ksx-nav.ksx-mobile-open{
+    display:flex;
+    position:absolute;
+    top:100%;left:0;right:0;
+    background:var(--ksx-paper);
+    flex-direction:column;
+    align-items:stretch;
+    padding:12px 24px 18px;
+    gap:3px;
+    border-bottom:1px solid var(--ksx-line);
+    box-shadow:0 20px 30px -22px rgba(18,18,22,.5);
+  }
+  .ksx-header .ksx-wrap{position:relative;}
+  .ksx-burger{display:grid;}
+  .ksx-head-tools{margin-left:auto;}
+  .ksx-search{width:180px;}
+  .ksx-focus-grid,.ksx-split{grid-template-columns:minmax(0,1fr);gap:26px;}
+  .ksx-hero-grid{grid-template-columns:minmax(0,1fr);gap:34px;}
+  .ksx-video-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .ksx-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .ksx-analyze-grid{grid-template-columns:minmax(0,1fr);gap:24px;}
+  .ksx-cta{grid-template-columns:minmax(0,1fr);}
+  .ksx-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media (max-width:720px){
+  body{font-size:15px;}
+  .ksx-wrap{padding:0 17px;}
+  .ksx-hero{padding:30px 0 38px;}
+  .ksx-section{padding:44px 0;}
+  .ksx-section-tight{padding:32px 0;}
+  .ksx-search{display:none;}
+  .ksx-head-tools{gap:8px;}
+  .ksx-hero-grid{gap:26px;}
+  .ksx-hero h1{letter-spacing:-.8px;}
+  .ksx-hero-stats{gap:8px;}
+  .ksx-hero-stat b{font-size:21px;}
+  .ksx-hero-corner{width:60px;height:60px;font-size:10.5px;top:-10px;right:-8px;}
+  .ksx-btn{height:43px;padding:0 17px;font-size:13.5px;}
+  .ksx-video-grid,.ksx-topic-grid,.ksx-author-grid,.ksx-review-grid,.ksx-partner-wall{grid-template-columns:minmax(0,1fr);}
+  .ksx-analyze{padding:32px 20px;border-radius:16px;}
+  .ksx-analyze::before{font-size:120px;top:-18px;}
+  .ksx-focus-main h3{font-size:19px;}
+  .ksx-focus-body{padding:19px 18px 21px;}
+  .ksx-rank-row{grid-template-columns:32px minmax(0,1fr) auto;gap:10px;padding:13px 15px;}
+  .ksx-rank-trend{display:none;}
+  .ksx-cta{padding:32px 22px;border-radius:16px;}
+  .ksx-footer-grid{grid-template-columns:minmax(0,1fr);gap:26px;}
+  .ksx-author-card{padding:16px;gap:13px;}
+  .ksx-avatar{width:48px;height:48px;font-size:17px;border-radius:13px;}
+  .ksx-footer{padding:38px 0 22px;}
+  .ksx-top{right:14px;bottom:16px;width:42px;height:42px;}
+  .ksx-news{padding:4px 16px;}
+  .ksx-news li{grid-template-columns:auto minmax(0,1fr);gap:8px 12px;}
+  .ksx-news-type{grid-column:1 / -1;justify-self:start;}
+  .ksx-notice .ksx-wrap{gap:8px;}
+  .ksx-notice-text{font-size:12.5px;flex-basis:100%;}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms !important;transition-duration:.01ms !important;}
+  html{scroll-behavior:auto;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ============ 吸顶：公告条 + 页头 ============ -->
+<div class="ksx-sticky-stack" id="ksxStickyStack">
+  <div class="ksx-notice" role="region" aria-label="最新公告">
+    <div class="ksx-wrap">
+      <span class="ksx-notice-badge">官方发布</span>
+      <p class="ksx-notice-text">ks舞团 夏柏 年度企划《从地下到舞台》第 6 集已上线，同步开放「线上挑战赛」报名，本周新增 12 支原创高清作品。</p>
+      <a class="ksx-notice-link" href="#ksxTopics">查看企划 →</a>
+    </div>
+  </div>
+  <header class="ksx-header">
+    <div class="ksx-wrap">
+      <a class="ksx-brand" href="#ksxHero" aria-label="ks舞团 夏柏 官网首页">
+        <span class="ksx-brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 46 L32 16 L46 46 Z" fill="none" stroke="#ff5a1f" stroke-width="5" stroke-linejoin="round"/>
+            <circle cx="32" cy="38" r="4.5" fill="#ffb703"/>
+          </svg>
+        </span>
+        <span>
+          <span class="ksx-brand-name">ks舞团 <span>夏柏</span></span>
+          <span class="ksx-brand-sub">Official Video Portal</span>
+        </span>
+      </a>
+      <nav class="ksx-nav" id="ksxNav" aria-label="主导航">
+        <a href="#ksxHero">首页</a>
+        <a href="#ksxFocus">焦点</a>
+        <a href="#ksxVideos">作品</a>
+        <a href="#ksxTopics">企划</a>
+        <a href="#ksxAuthors">创作者</a>
+        <a href="#ksxCharts">榜单</a>
+        <a href="#ksxReviews">口碑</a>
+        <a href="#ksxFaq">帮助</a>
+        <a href="#ksxJoin" class="ksx-nav-cta">投稿报名</a>
+      </nav>
+      <div class="ksx-head-tools">
+        <div class="ksx-search">
+          <label class="ksx-sr" for="ksxSearchInput">搜索舞团作品</label>
+          <input id="ksxSearchInput" type="search" placeholder="搜索作品 / 创作者" autocomplete="off">
+          <button class="ksx-search-btn" id="ksxSearchBtn" aria-label="执行搜索">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+              <circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/>
+            </svg>
+          </button>
+          <div class="ksx-search-hint" id="ksxSearchHint" role="listbox" aria-label="搜索建议"></div>
+        </div>
+        <button class="ksx-burger" id="ksxBurger" aria-label="展开导航菜单" aria-expanded="false" aria-controls="ksxNav">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main>
+
+  <!-- ============ 首屏 ============ -->
+  <section class="ksx-hero" id="ksxHero">
+    <div class="ksx-wrap">
+      <div class="ksx-hero-grid">
+        <div>
+          <span class="ksx-eyebrow">街舞品牌官网 · 持续运营中</span>
+          <h1>ks舞团 <em>夏柏</em></h1>
+          <p class="ksx-hero-tag">把街头力量拍成可被反复观看的影像</p>
+          <p class="ksx-hero-lead"><strong>ks舞团 夏柏</strong>是面向街舞爱好者、编舞师与品牌合作伙伴的官方视频门户。我们以原创、正版、高清为底线，把每一次排练、每一场比赛、每一段舞者的真实生活，做成值得被收藏的精品内容。</p>
+          <p class="ksx-hero-desc">作为深耕街舞垂直领域的视频品牌，官网同时承担作品发布、创作者孵化、赛事报名与社区互动四项职能，让好看的舞被看见，也让跳舞的人被记住。</p>
+          <div class="ksx-hero-actions">
+            <a class="ksx-btn ksx-btn-primary" href="#ksxVideos">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              观看最新作品
+            </a>
+            <a class="ksx-btn ksx-btn-dark" href="#ksxJoin">投稿与报名</a>
+            <a class="ksx-btn ksx-btn-ghost" href="#ksxAuthors">认识创作者</a>
+          </div>
+          <div class="ksx-hero-stats">
+            <div class="ksx-hero-stat"><b data-ksx-count="1268">0</b><small>累计原创作品</small></div>
+            <div class="ksx-hero-stat"><b data-ksx-count="356">0</b><i>万</i><small>全平台播放量</small></div>
+            <div class="ksx-hero-stat"><b data-ksx-count="84">0</b><i>位</i><small>签约合作创作者</small></div>
+          </div>
+        </div>
+        <div class="ksx-hero-visual">
+          <div class="ksx-hero-corner">周年<br>特别企划</div>
+          <figure class="ksx-hero-figure">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 800'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%231b1b26'/%3E%3Cstop offset='1' stop-color='%23303a52'/%3E%3C/linearGradient%3E%3ClinearGradient id='beam' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ffb703' stop-opacity='.85'/%3E%3Cstop offset='1' stop-color='%23ff5a1f' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1000' height='800' fill='url(%23sky)'/%3E%3Cpath d='M430 0 L570 0 L700 800 L300 800 Z' fill='url(%23beam)'/%3E%3Cg fill='%230e0e14'%3E%3Crect x='0' y='620' width='1000' height='180'/%3E%3C/g%3E%3Cg fill='%23f4f2ee' opacity='.14'%3E%3Ccircle cx='120' cy='120' r='58'/%3E%3Ccircle cx='880' cy='150' r='40'/%3E%3Ccircle cx='760' cy='90' r='24'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='500' cy='300' r='46' fill='%23f4f2ee'/%3E%3Cpath d='M470 350 q30 -30 60 0 l24 96 q-54 20 -108 0 Z' fill='%23ff5a1f'/%3E%3Cpath d='M452 400 q-46 34 -34 90' stroke='%23f4f2ee' stroke-width='17' fill='none' stroke-linecap='round'/%3E%3Cpath d='M548 400 q46 34 34 90' stroke='%23f4f2ee' stroke-width='17' fill='none' stroke-linecap='round'/%3E%3Cpath d='M482 446 q-8 60 -38 92' stroke='%23ffb703' stroke-width='19' fill='none' stroke-linecap='round'/%3E%3Cpath d='M520 446 q16 54 56 76' stroke='%23ffb703' stroke-width='19' fill='none' stroke-linecap='round'/%3E%3C/g%3E%3Cg fill='%23ff5a1f' opacity='.55'%3E%3Crect x='60' y='700' width='130' height='6' rx='3'/%3E%3Crect x='810' y='700' width='130' height='6' rx='3'/%3E%3C/g%3E%3Cg fill='%23f4f2ee' opacity='.5'%3E%3Ccircle cx='200' cy='480' r='5'/%3E%3Ccircle cx='290' cy='540' r='4'/%3E%3Ccircle cx='720' cy='470' r='5'/%3E%3Ccircle cx='660' cy='560' r='4'/%3E%3C/g%3E%3C/svg%3E" alt="ks舞团 夏柏 周年企划主视觉：舞台光束下的舞者剪影">
+            <figcaption class="ksx-play-badge"><i><svg width="10" height="10" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></i>主推作品 · 4K 高清全片</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 焦点内容 ============ -->
+  <section class="ksx-section" id="ksxFocus">
+    <div class="ksx-wrap">
+      <div class="ksx-sec-head">
+        <span class="ksx-kicker">Focus · 本期焦点</span>
+        <h2>本周值得停留的 <em>四段舞</em></h2>
+        <p>每一支被推荐的作品，都经过官网编辑组与特邀舞者的双重筛选，兼顾技术含量与观看体验。</p>
+      </div>
+      <div class="ksx-focus-grid">
+        <article class="ksx-focus-main">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 540'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23c94b1d'/%3E%3Cstop offset='1' stop-color='%23211a2e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='960' height='540' fill='url(%23f1)'/%3E%3Cg opacity='.2' stroke='%23ffd6a5' stroke-width='2' fill='none'%3E%3Cpath d='M0 400 Q240 300 480 400 T960 400'/%3E%3Cpath d='M0 450 Q240 350 480 450 T960 450'/%3E%3Cpath d='M0 500 Q240 400 480 500 T960 500'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='480' cy='180' r='40' fill='%23fdf3e7'/%3E%3Cpath d='M448 226 q32 -24 64 0 l18 96 q-50 18 -100 0 Z' fill='%23ffb703'/%3E%3Cpath d='M436 270 q-50 24 -44 80' stroke='%23fdf3e7' stroke-width='15' fill='none' stroke-linecap='round'/%3E%3Cpath d='M524 270 q50 24 44 80' stroke='%23fdf3e7' stroke-width='15' fill='none' stroke-linecap='round'/%3E%3Cpath d='M462 316 q-12 44 -46 68' stroke='%23ff5a1f' stroke-width='17' fill='none' stroke-linecap='round'/%3E%3Cpath d='M498 316 q18 40 56 56' stroke='%23ff5a1f' stroke-width='17' fill='none' stroke-linecap='round'/%3E%3C/g%3E%3Cg fill='%23fdf3e7' opacity='.72'%3E%3Crect x='60' y='466' width='220' height='5' rx='2.5'/%3E%3Crect x='680' y='466' width='220' height='5' rx='2.5'/%3E%3C/g%3E%3C/svg%3E" alt="ks舞团 夏柏 焦点作品《地板的回声》封面：暖橙舞台上的单人定格动作">
+          <div class="ksx-focus-body">
+            <div class="ksx-tagrow">
+              <span class="ksx-tag ksx-tag-hot">编辑精选</span>
+              <span class="ksx-tag">原创编舞</span>
+              <span class="ksx-tag">幕后纪实</span>
+            </div>
+            <h3>《地板的回声》· 夏柏 与四位舞者的一场深夜排练</h3>
+            <p>从晚上九点到凌晨一点，排练厅只剩下地板的回弹声。这支作品没有华丽的舞台灯，却把 ks舞团 最真实的一面留在镜头里：失误、重来、再来一次，直到所有人都喘着气笑出来。</p>
+            <div class="ksx-meta">
+              <span>作者 <b>夏柏</b></span>
+              <span>播放 <b>128.6 万</b></span>
+              <span>点赞 <b>9.4 万</b></span>
+              <span>12:48</span>
+            </div>
+            <div class="ksx-actions">
+              <button class="ksx-mini-btn ksx-like" data-count="94021" aria-pressed="false">
+                <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.3A4.2 4.2 0 0 1 12 7a4.2 4.2 0 0 1 7 3.7C19 15.4 12 20 12 20z"/></svg>
+                <span>9.4 万</span>
+              </button>
+              <button class="ksx-mini-btn ksx-fav" aria-pressed="false">
+                <svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg>
+                <span>收藏</span>
+              </button>
+              <button class="ksx-mini-btn ksx-comment-open">评论 236</button>
+              <button class="ksx-mini-btn ksx-share">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="ksx-focus-list">
+          <article class="ksx-focus-item">
+            <span class="ksx-focus-num">02</span>
+            <div>
+              <h3>Breaking 基础拆解：Toprock 的三种节奏处理方式</h3>
+              <p>面向入门舞者的教程干货，逐拍慢放对照，配合脚位提示条，练习时可直接跟跳。</p>
+              <div class="ksx-meta"><span>作者 阿凛</span><span>播放 62.4 万</span><span>教程干货</span></div>
+            </div>
+          </article>
+          <article class="ksx-focus-item">
+            <span class="ksx-focus-num">03</span>
+            <div>
+              <h3>城市探索：在旧厂房里跳一支关于工业记忆的舞</h3>
+              <p>ks舞团 与本地摄影师合作，用长镜头记录舞者穿行在钢架之间的身体语言。</p>
+              <div class="ksx-meta"><span>作者 老鹿</span><span>播放 48.9 万</span><span>城市探索</span></div>
+            </div>
+          </article>
+          <article class="ksx-focus-item">
+            <span class="ksx-focus-num">04</span>
+            <div>
+              <h3>对话夏柏：一支舞从灵感到上台要经过多少次失败</h3>
+              <p>人物访谈，聊编舞方法、团队协作与商业化之间的取舍，也聊那些没人看见的夜晚。</p>
+              <div class="ksx-meta"><span>作者 官网编辑部</span><span>播放 31.2 万</span><span>人物访谈</span></div>
+            </div>
+          </article>
+          <article class="ksx-focus-item">
+            <span class="ksx-focus-num">05</span>
+            <div>
+              <h3>幕后：一支作品视频是怎么被剪出来的</h3>
+              <p>从素材整理到调色，剪辑师把 4 小时的排练压缩成 12 分钟的观看节奏。</p>
+              <div class="ksx-meta"><span>作者 剪辑室小陈</span><span>播放 26.7 万</span><span>创作幕后</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 关键词深度解析 ============ -->
+  <section class="ksx-section-tight" id="ksxStory">
+    <div class="ksx-wrap">
+      <div class="ksx-analyze">
+        <h2>为什么是 <em>ks舞团 夏柏</em></h2>
+        <p>在街舞内容高度碎片化的今天，一个稳定的名字比一支爆款舞更难建立。我们想用长期主义的方式，把这个名字做成一个值得信赖的内容坐标。</p>
+        <div class="ksx-analyze-grid">
+          <article>
+            <h3>从一支地下排练视频开始的品牌故事</h3>
+            <p>最早的时候，ks舞团 只是一群在下班后凑在排练厅里的人。夏柏把手机架在饮水机上，拍下了第一支完整作品。画质并不好，机位也不专业，但视频里那种反复摔倒又爬起来的状态，让很多同样在练习的人第一次觉得被理解。后来这支视频被反复转发，留言里出现最多的一句话是：原来有人和我一样。这句话成了品牌故事的开端，也决定了我们做内容的方向——不追求把舞者拍成明星，而是把练习的过程拍清楚。</p>
+          </article>
+          <article>
+            <h3>用官网承接被短视频忽略的深度需求</h3>
+            <p>短视频平台擅长制造声量，却很难承载体系化的内容。一个新手想知道 Toprock 该从哪个节拍开始练，需要主动去搜、去拼凑；一位合作品牌方想了解团队真实水准，也很难从十几秒的高光片段中判断。官网因此被赋予了更具体的使命：把教程、访谈、幕后、赛事信息、创作者档案和口碑评价，完整地放在同一个地方。我们希望用户搜索 ks舞团 夏柏 时，第一个打开的页面就能回答大部分疑问，而不是让他们在十几个平台之间来回跳转。</p>
+          </article>
+          <article>
+            <h3>创作者生态：让每一个舞者都有可被检索的档案</h3>
+            <p>在内容生态里，最关键的不是独家，而是稳定。官网为每位合作创作者建立独立档案，记录擅长舞种、作品数量、代表作品与编辑评语。这样的设计看似朴素，却解决了一个长期存在的问题：观众记得住一支舞，却记不住跳舞的人。当舞者拥有可检索的个人页，商演、教学、跨界合作的机会才能够被更准确地匹配。我们坚持原创与正版授权，所有作品发布前都会完成创作者确认，这是平台对舞者最基本的尊重。</p>
+          </article>
+          <article>
+            <h3>赛事、社区与持续运营的长期取舍</h3>
+            <p>街舞文化离不开现场。官网除了视频发布，也长期运营线上挑战赛与线下交流活动，参赛者通过官网报名、上传作品、参与投票，形成一个完整的参与闭环。我们也遇到过取舍：拒绝过一些数据很好但动作危险、缺乏安全提示的内容；也放弃过追逐热点而牺牲画质的方案。持续运营带来的回报是缓慢但真实的——口碑在一届届比赛里积累，企业合作方更愿意签长期协议，创作者也愿意把重要作品首发在这里。我们希望这个官网不只是一张漂亮的封面，而是一个能持续长出内容的地方。</p>
+          </article>
+        </div>
+        <div class="ksx-analyze-foot">
+          <b>内容自检</b>
+          <span>原创声明 · 正版授权 · 高清源文件 · 动作安全提示</span>
+          <span>青少年观众请在专业场地与监护人陪同下练习</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 视频流 ============ -->
+  <section class="ksx-section" id="ksxVideos">
+    <div class="ksx-wrap">
+      <div class="ksx-sec-head">
+        <span class="ksx-kicker">Library · 作品库</span>
+        <h2>最新上线的 <em>原创高清</em> 作品</h2>
+        <p>全部作品为 ks舞团 夏柏 官方发布，支持标签筛选，点击卡片查看详情与创作手记。</p>
+      </div>
+      <div class="ksx-tagrow" id="ksxFilterBar" role="group" aria-label="作品标签筛选">
+        <button class="ksx-mini-btn ksx-filter ksx-on" data-filter="all">全部</button>
+        <button class="ksx-mini-btn ksx-filter" data-filter="编舞">编舞</button>
+        <button class="ksx-mini-btn ksx-filter" data-filter="教程">教程</button>
+        <button class="ksx-mini-btn ksx-filter" data-filter="访谈">访谈</button>
+        <button class="ksx-mini-btn ksx-filter" data-filter="幕后">幕后</button>
+        <button class="ksx-mini-btn ksx-filter" data-filter="城市">城市</button>
+      </div>
+      <div class="ksx-video-grid" id="ksxVideoGrid">
+
+        <article class="ksx-video-card" data-tags="编舞 幕后">
+          <div class="ksx-video-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='v1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23222b3f'/%3E%3Cstop offset='1' stop-color='%23555f7a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23v1)'/%3E%3Cg stroke='%239fb0d0' stroke-width='1.5' opacity='.5'%3E%3Cpath d='M0 260 H640'/%3E%3Cpath d='M0 300 H640'/%3E%3Cpath d='M160 200 L160 360'/%3E%3Cpath d='M480 200 L480 360'/%3E%3C/g%3E%3Ccircle cx='320' cy='120' r='30' fill='%23e8ecf6'/%3E%3Cpath d='M296 154 q24 -16 48 0 l14 70 q-38 14 -76 0 Z' fill='%233b4a6b'/%3E%3Cpath d='M286 186 q-34 20 -30 62' stroke='%23e8ecf6' stroke-width='11' fill='none' stroke-linecap='round'/%3E%3Cpath d='M354 186 q34 20 30 62' stroke='%23e8ecf6' stroke-width='11' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" alt="作品《九点之后的排练厅》封面：冷蓝色调下双人镜像动作">
+            <span class="ksx-video-dur">11:32</span>
+          </div>
+          <div class="ksx-video-body">
+            <div class="ksx-tagrow"><span class="ksx-tag ksx-tag-hot">新片</span><span class="ksx-tag">编舞</span></div>
+            <h3>《九点之后的排练厅》双人对舞完整版</h3>
+            <p>两个人、四面镜子和一段反复修改的八拍。夏柏与阿凛用镜像结构讲合作里的信任问题。</p>
+            <div class="ksx-meta"><span>阿凛</span><span>播放 41.3 万</span><span>点赞 3.1 万</span></div>
+            <div class="ksx-actions">
+              <button class="ksx-mini-btn ksx-like" data-count="31226" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.3A4.2 4.2 0 0 1 12 7a4.2 4.2 0 0 1 7 3.7C19 15.4 12 20 12 20z"/></svg><span>3.1 万</span></button>
+              <button class="ksx-mini-btn ksx-fav" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg><span>收藏</span></button>
+              <button class="ksx-mini-btn ksx-share">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ksx-video-card" data-tags="教程">
+          <div class="ksx-video-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='v2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23fff3dd'/%3E%3Cstop offset='1' stop-color='%23ffd08a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23v2)'/%3E%3Cg stroke='%23c8761f' stroke-width='2' opacity='.6' fill='none'%3E%3Crect x='60' y='60' width='520' height='240' rx='16'/%3E%3Cpath d='M60 150 H580'/%3E%3Cpath d='M220 150 V300'/%3E%3Cpath d='M420 150 V300'/%3E%3C/g%3E%3Cg fill='%23c8761f'%3E%3Ccircle cx='130' cy='210' r='9'/%3E%3Ccircle cx='300' cy='210' r='9'/%3E%3Ccircle cx='500' cy='210' r='9'/%3E%3C/g%3E%3Cg stroke='%23a45a12' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M130 240 q-10 30 -34 44'/%3E%3Cpath d='M300 240 q14 28 44 38'/%3E%3C/fill%3E%3Cg%3E%3C/svg%3E" alt="教程《Toprock 节拍拆解》封面：米黄底上的脚位节奏示意">
+            <span class="ksx-video-dur">18:04</span>
+          </div>
+          <div class="ksx-video-body">
+            <div class="ksx-tagrow"><span class="ksx-tag">教程</span><span class="ksx-tag ksx-tag-gold">入门友好</span></div>
+            <h3>Toprock 节拍拆解：从数拍到能跳</h3>
+            <p>把 1 到 8 拍慢速拆开，配合三个可立刻上手的练习组合，解决「听得懂但跟不上」的问题。</p>
+            <div class="ksx-meta"><span>阿凛</span><span>播放 62.4 万</span><span>点赞 5.8 万</span></div>
+            <div class="ksx-actions">
+              <button class="ksx-mini-btn ksx-like" data-count="58403" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.3A4.2 4.2 0 0 1 12 7a4.2 4.2 0 0 1 7 3.7C19 15.4 12 20 12 20z"/></svg><span>5.8 万</span></button>
+              <button class="ksx-mini-btn ksx-fav" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg><span>收藏</span></button>
+              <button class="ksx-mini-btn ksx-share">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ksx-video-card" data-tags="访谈">
+          <div class="ksx-video-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%231a1a20'/%3E%3Cg fill='none' stroke='%23ff5a1f' stroke-width='2' opacity='.7'%3E%3Ccircle cx='320' cy='180' r='120'/%3E%3Ccircle cx='320' cy='180' r='84'/%3E%3Ccircle cx='320' cy='180' r='48'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='180' cy='150' r='26' fill='%23ffb703'/%3E%3Crect x='152' y='182' width='56' height='76' rx='24' fill='%23ffb703' opacity='.85'/%3E%3Ccircle cx='460' cy='150' r='26' fill='%23e8e3da'/%3E%3Crect x='432' y='182' width='56' height='76' rx='24' fill='%23e8e3da' opacity='.85'/%3E%3C/g%3E%3Cg stroke='%23ff5a1f' stroke-width='2' stroke-dasharray='5 7'%3E%3Cpath d='M208 200 H432'/%3E%3C/g%3E%3C/svg%3E" alt="访谈《对话夏柏》封面：黑底橙色同心圆与两位对话剪影">
+            <span class="ksx-video-dur">24:16</span>
+          </div>
+          <div class="ksx-video-body">
+            <div class="ksx-tagrow"><span class="ksx-tag">访谈</span><span class="ksx-tag">品牌故事</span></div>
+            <h3>对话夏柏：灵感不是等来的，是排练出来的</h3>
+            <p>从第一次带队参赛到如今管理一个舞团，聊管理、聊分歧，也聊为什么坚持把失败镜头留在片子里。</p>
+            <div class="ksx-meta"><span>官网编辑部</span><span>播放 31.2 万</span><span>点赞 2.4 万</span></div>
+            <div class="ksx-actions">
+              <button class="ksx-mini-btn ksx-like" data-count="24370" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.3A4.2 4.2 0 0 1 12 7a4.2 4.2 0 0 1 7 3.7C19 15.4 12 20 12 20z"/></svg><span>2.4 万</span></button>
+              <button class="ksx-mini-btn ksx-fav" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg><span>收藏</span></button>
+              <button class="ksx-mini-btn ksx-share">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ksx-video-card" data-tags="城市 编舞">
+          <div class="ksx-video-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='v4' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%232b3a35'/%3E%3Cstop offset='1' stop-color='%23161d1a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23v4)'/%3E%3Cg fill='%230f1512'%3E%3Crect x='40' y='120' width='70' height='240'/%3E%3Crect x='140' y='80' width='56' height='280'/%3E%3Crect x='470' y='140' width='80' height='220'/%3E%3Crect x='570' y='100' width='50' height='260'/%3E%3C/g%3E%3Cg fill='%23ffb703' opacity='.8'%3E%3Crect x='58' y='150' width='12' height='14'/%3E%3Crect x='88' y='150' width='12' height='14'/%3E%3Crect x='58' y='192' width='12' height='14'/%3E%3Crect x='488' y='176' width='14' height='16'/%3E%3Crect x='522' y='176' width='14' height='16'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='320' cy='160' r='24' fill='%23e8e3da'/%3E%3Crect x='300' y='186' width='40' height='70' rx='18' fill='%235f7f6f'/%3E%3Cpath d='M312 252 q-16 46 -46 64' stroke='%23e8e3da' stroke-width='12' fill='none' stroke-linecap='round'/%3E%3Cpath d='M330 252 q20 40 54 52' stroke='%23e8e3da' stroke-width='12' fill='none' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E" alt="城市探索作品封面：旧厂房与绿色调灯光中的舞者">
+            <span class="ksx-video-dur">08:51</span>
+          </div>
+          <div class="ksx-video-body">
+            <div class="ksx-tagrow"><span class="ksx-tag">城市探索</span><span class="ksx-tag">在地文化</span></div>
+            <h3>旧厂房的钢架之间，跳一支关于工业记忆的舞</h3>
+            <p>一次没有剧组的拍摄，只有一机一镜。空间本身成了编舞的一部分，脚步声比配乐更响。</p>
+            <div class="ksx-meta"><span>老鹿</span><span>播放 48.9 万</span><span>点赞 4.1 万</span></div>
+            <div class="ksx-actions">
+              <button class="ksx-mini-btn ksx-like" data-count="41260" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.3A4.2 4.2 0 0 1 12 7a4.2 4.2 0 0 1 7 3.7C19 15.4 12 20 12 20z"/></svg><span>4.1 万</span></button>
+              <button class="ksx-mini-btn ksx-fav" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg><span>收藏</span></button>
+              <button class="ksx-mini-btn ksx-share">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ksx-video-card" data-tags="幕后">
+          <div class="ksx-video-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23efe9df'/%3E%3Cg stroke='%238c8273' stroke-width='2' fill='none'%3E%3Crect x='56' y='56' width='200' height='120' rx='8'/%3E%3Crect x='288' y='56' width='140' height='120' rx='8'/%3E%3Crect x='460' y='56' width='124' height='120' rx='8'/%3E%3C/g%3E%3Cg fill='%23dcd3c4'%3E%3Crect x='70' y='72' width='172' height='88' rx='4'/%3E%3Crect x='302' y='72' width='112' height='88' rx='4'/%3E%3Crect x='474' y='72' width='96' height='88' rx='4'/%3E%3C/g%3E%3Cg stroke='%23ff5a1f' stroke-width='4' fill='none' stroke-linecap='round'%3E%3Cpath d='M96 210 h448'/%3E%3Cpath d='M96 230 h320'/%3E%3Cpath d='M96 250 h392'/%3E%3C/g%3E%3Cg fill='%23ff5a1f'%3E%3Ccircle cx='96' cy='210' r='7'/%3E%3Ccircle cx='96' cy='230' r='7'/%3E%3Ccircle cx='96' cy='250' r='7'/%3E%3C/g%3E%3Cg fill='%232b2b33'%3E%3Crect x='96' y='290' width='180' height='10' rx='5'/%3E%3Crect x='300' y='290' width='110' height='10' rx='5' opacity='.4'/%3E%3C/g%3E%3C/svg%3E" alt="幕后作品《剪辑室里的十二分钟》封面：时间线与素材缩略示意">
+            <span class="ksx-video-dur">15:07</span>
+          </div>
+          <div class="ksx-video-body">
+            <div class="ksx-tagrow"><span class="ksx-tag">创作幕后</span><span class="ksx-tag">实用技巧</span></div>
+            <h3>剪辑室里的十二分钟：怎么把排练变成作品</h3>
+            <p>素材整理、节奏取舍、调色与声音设计，剪辑师完整展示一支作品从毛片到成片的路径。</p>
+            <div class="ksx-meta"><span>剪辑室小陈</span><span>播放 26.7 万</span><span>点赞 1.9 万</span></div>
+            <div class="ksx-actions">
+              <button class="ksx-mini-btn ksx-like" data-count="19802" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.3A4.2 4.2 0 0 1 12 7a4.2 4.2 0 0 1 7 3.7C19 15.4 12 20 12 20z"/></svg><span>1.9 万</span></button>
+              <button class="ksx-mini-btn ksx-fav" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg><span>收藏</span></button>
+              <button class="ksx-mini-btn ksx-share">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ksx-video-card" data-tags="编舞 教程">
+          <div class="ksx-video-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='v6' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%234a2a5e'/%3E%3Cstop offset='1' stop-color='%23d05a7a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23v6)'/%3E%3Cg fill='none' stroke='%23ffd9e4' stroke-width='2' opacity='.6'%3E%3Cpath d='M0 300 Q160 220 320 300 T640 300'/%3E%3Cpath d='M0 330 Q160 250 320 330 T640 330'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='320' cy='130' r='28' fill='%23ffe9f0'/%3E%3Cpath d='M296 162 q24 -16 48 0 l14 74 q-38 14 -76 0 Z' fill='%23ffd9e4'/%3E%3Cpath d='M286 196 q-40 12 -54 54' stroke='%23ffd9e4' stroke-width='12' fill='none' stroke-linecap='round'/%3E%3Cpath d='M354 196 q40 12 54 54' stroke='%23ffd9e4' stroke-width='12' fill='none' stroke-linecap='round'/%3E%3C/g%3E%3Cg fill='%23ffd9e4' opacity='.5'%3E%3Ccircle cx='120' cy='90' r='6'/%3E%3Ccircle cx='520' cy='110' r='8'/%3E%3Ccircle cx='470' cy='60' r='4'/%3E%3C/g%3E%3C/svg%3E" alt="教程作品封面：粉紫渐变背景中的基础动作示范">
+            <span class="ksx-video-dur">21:45</span>
+          </div>
+          <div class="ksx-video-body">
+            <div class="ksx-tagrow"><span class="ksx-tag">教程</span><span class="ksx-tag">进阶</span></div>
+            <h3>身体控制训练：从单点发力到整段动作的稳定</h3>
+            <p>面向已经能完成基础组合的舞者，讲清重心、呼吸与控制力的训练方法，附四周练习计划。</p>
+            <div class="ksx-meta"><span>夏柏</span><span>播放 37.5 万</span><span>点赞 3.3 万</span></div>
+            <div class="ksx-actions">
+              <button class="ksx-mini-btn ksx-like" data-count="33058" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.3A4.2 4.2 0 0 1 12 7a4.2 4.2 0 0 1 7 3.7C19 15.4 12 20 12 20z"/></svg><span>3.3 万</span></button>
+              <button class="ksx-mini-btn ksx-fav" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg><span>收藏</span></button>
+              <button class="ksx-mini-btn ksx-share">分享</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 专题企划 ============ -->
+  <section class="ksx-section" id="ksxTopics">
+    <div class="ksx-wrap">
+      <div class="ksx-sec-head">
+        <span class="ksx-kicker">Series · 专题企划</span>
+        <h2>把零散的作品，编成 <em>可以追的系列</em></h2>
+        <p>专题是官网独有的内容组织方式，每个企划都有明确主题、更新节奏与创作者阵容，适合连续观看。</p>
+      </div>
+      <div class="ksx-topic-grid">
+        <article class="ksx-topic-card ksx-topic-lead">
+          <span class="ksx-topic-status">更新中 · 第 6 集已上线</span>
+          <figure class="ksx-topic-figure">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23202028'/%3E%3Cg stroke='%23ffb703' stroke-width='2' fill='none' opacity='.5'%3E%3Crect x='48' y='48' width='544' height='264' rx='12'/%3E%3Cpath d='M48 130 H592'/%3E%3C/g%3E%3Cg fill='%23ff5a1f'%3E%3Crect x='80' y='164' width='60' height='14' rx='7'/%3E%3Crect x='80' y='200' width='120' height='14' rx='7' opacity='.7'/%3E%3Crect x='80' y='236' width='90' height='14' rx='7' opacity='.45'/%3E%3C/g%3E%3Cg fill='%23f4f2ee'%3E%3Crect x='400' y='164' width='170' height='10' rx='5' opacity='.8'/%3E%3Crect x='400' y='190' width='130' height='10' rx='5' opacity='.55'/%3E%3Crect x='400' y='216' width='150' height='10' rx='5' opacity='.35'/%3E%3C/g%3E%3Cg fill='%23ffb703'%3E%3Ccircle cx='420' cy='272' r='12'/%3E%3C/g%3E%3Cpath d='M416 266 l12 6 l-12 6 z' fill='%23202028'/%3E%3C/svg%3E" alt="专题《从地下到舞台》封面：黑底上的进度与章节排版">
+          </figure>
+          <h3>从地下到舞台</h3>
+          <p>追踪 ks舞团 从排练厅走向正式舞台的全过程，每一集记录一次真实的挑战与一次公开评审。</p>
+          <ul class="ksx-topic-list">
+            <li><i>EP06</i>舞台灯亮之前：走位与情绪的最后一轮调整</li>
+            <li><i>EP05</i>被否掉的三个方案，和最后留下来的那一个</li>
+            <li><i>EP04</i>第一次带新人上场，如何分配八拍里的高光</li>
+          </ul>
+        </article>
+
+        <article class="ksx-topic-card">
+          <span class="ksx-topic-status ksx-soon">即将开启 · 报名预告</span>
+          <h3>街角挑战赛</h3>
+          <p>面向所有舞者的线上挑战，指定音乐、自由编舞，由舞团成员与特邀评委公开点评并投票。</p>
+          <ul class="ksx-topic-list">
+            <li><i>01</i>挑战规则与音乐包发布</li>
+            <li><i>02</i>上传作品并填写动作安全说明</li>
+            <li><i>03</i>公开投票与评审团点评</li>
+          </ul>
+        </article>
+
+        <article class="ksx-topic-card">
+          <span class="ksx-topic-status">持续更新 · 每月一期</span>
+          <h3>一支舞的诞生</h3>
+          <p>从灵感记录到最终成片，完整呈现编舞过程，适合想系统学习编舞逻辑的观众。</p>
+          <ul class="ksx-topic-list">
+            <li><i>01</i>灵感从哪来：十个被放弃的开头</li>
+            <li><i>02</i>结构设计：如何安排一整支舞的呼吸</li>
+            <li><i>03</i>与音乐对话：鼓点之外的处理方式</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 作者矩阵 ============ -->
+  <section class="ksx-section" id="ksxAuthors">
+    <div class="ksx-wrap">
+      <div class="ksx-sec-head">
+        <span class="ksx-kicker">Creators · 创作者</span>
+        <h2>ks舞团 夏柏 背后的 <em>创作者们</em></h2>
+        <p>他们负责把身体语言翻译成影像。点击卡片可展开完整简介，了解每位创作者擅长的领域与代表作品。</p>
+      </div>
+      <div class="ksx-author-grid">
+
+        <article class="ksx-author-card">
+          <span class="ksx-avatar" style="background:linear-gradient(140deg,#ff5a1f,#c93a0b)" aria-hidden="true">夏</span>
+          <div class="ksx-author-info">
+            <h3>夏柏 <span class="ksx-author-role">主理人</span></h3>
+            <p class="ksx-author-stats">作品 <b>236</b> 支 · 粉丝 <b>52.8 万</b> · 擅长 编舞 / 教学</p>
+            <p>ks舞团 的发起人与主编舞。习惯从生活细节里找动作动机，强调「能重复跳十次还成立」的编舞标准。近年开始把更多精力放在新人培养与作品结构设计上。</p>
+          </div>
+        </article>
+
+        <article class="ksx-author-card">
+          <span class="ksx-avatar" style="background:linear-gradient(140deg,#3b4a6b,#222b3f)" aria-hidden="true">凛</span>
+          <div class="ksx-author-info">
+            <h3>阿凛 <span class="ksx-author-role">基础教学</span></h3>
+            <p class="ksx-author-stats">作品 <b>148</b> 支 · 粉丝 <b>31.6 万</b> · 擅长 Breaking / 教程</p>
+            <p>以拆解清晰著称，擅长把复杂动作拆成可练习的小步骤。课程里会反复强调发力顺序与保护动作，是很多入门观众的「第一任老师」。</p>
+          </div>
+        </article>
+
+        <article class="ksx-author-card">
+          <span class="ksx-avatar" style="background:linear-gradient(140deg,#1f7a4d,#0f4430)" aria-hidden="true">鹿</span>
+          <div class="ksx-author-info">
+            <h3>老鹿 <span class="ksx-author-role">城市影像</span></h3>
+            <p class="ksx-author-stats">作品 <b>92</b> 支 · 粉丝 <b>18.4 万</b> · 擅长 城市探索 / 摄影</p>
+            <p>常年在城市里寻找适合跳舞的空间，从旧厂房到天桥底下。他相信空间会改变身体表达，也愿意花一整天等一束刚刚好的光。</p>
+          </div>
+        </article>
+
+        <article class="ksx-author-card">
+          <span class="ksx-avatar" style="background:linear-gradient(140deg,#7b4d9c,#4a2a5e)" aria-hidden="true">陈</span>
+          <div class="ksx-author-info">
+            <h3>剪辑室小陈 <span class="ksx-author-role">幕后记录</span></h3>
+            <p class="ksx-author-stats">作品 <b>76</b> 支 · 粉丝 <b>12.9 万</b> · 擅长 幕后 / 剪辑</p>
+            <p>负责把四小时的素材压缩成十几分钟的观看节奏。喜欢保留现场音与呼吸声，认为一支作品的情绪有一半来自剪辑台上的取舍。</p>
+          </div>
+        </article>
+
+        <article class="ksx-author-card">
+          <span class="ksx-avatar" style="background:linear-gradient(140deg,#ffb703,#c98600)" aria-hidden="true">禾</span>
+          <div class="ksx-author-info">
+            <h3>小禾 <span class="ksx-author-role">新人舞者</span></h3>
+            <p class="ksx-author-stats">作品 <b>34</b> 支 · 粉丝 <b>6.2 万</b> · 擅长 Hiphop / 日常记录</p>
+            <p>入团不到两年的新人，用镜头记录自己从跟不上八拍到能完整跳完一支舞的过程。她的日常记录系列让很多初学者第一次觉得「我也可以」。</p>
+          </div>
+        </article>
+
+        <article class="ksx-author-card">
+          <span class="ksx-avatar" style="background:linear-gradient(140deg,#2c7a8c,#164652)" aria-hidden="true">听</span>
+          <div class="ksx-author-info">
+            <h3>阿听 <span class="ksx-author-role">音乐与声音</span></h3>
+            <p class="ksx-author-stats">作品 <b>58</b> 支 · 粉丝 <b>9.8 万</b> · 擅长 音乐现场 / 声音设计</p>
+            <p>为舞团作品做声音设计与配乐筛选，也拍音乐现场。习惯先听脚步再挑音乐，认为节奏是舞者与空间之间最诚实的沟通方式。</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 榜单 ============ -->
+  <section class="ksx-section" id="ksxCharts">
+    <div class="ksx-wrap">
+      <div class="ksx-sec-head">
+        <span class="ksx-kicker">Ranking · 数据榜单</span>
+        <h2>这一周，大家在 <em>反复观看</em> 什么</h2>
+        <p>榜单按播放、互动与完播三项综合计算，每周一更新，可作为观察 ks舞团 夏柏 内容口碑的一个切片。</p>
+      </div>
+      <div class="ksx-rank-tabs" id="ksxRankTabs" role="tablist" aria-label="榜单切换">
+        <button class="ksx-rank-tab ksx-active" data-rank="hot" role="tab" aria-selected="true">热度榜</button>
+        <button class="ksx-rank-tab" data-rank="new" role="tab" aria-selected="false">新人榜</button>
+        <button class="ksx-rank-tab" data-rank="rate" role="tab" aria-selected="false">口碑榜</button>
+      </div>
+      <div class="ksx-rank-list" id="ksxRankList">
+        <div class="ksx-rank-row"><span class="ksx-rank-no">01</span><div class="ksx-rank-title">《地板的回声》· 深夜排练全纪录<small>夏柏 · 12:48</small></div><span class="ksx-rank-heat">128.6 万播放</span><span class="ksx-rank-trend">↑ 2</span></div>
+        <div class="ksx-rank-row"><span class="ksx-rank-no">02</span><div class="ksx-rank-title">Toprock 节拍拆解：从数拍到能跳<small>阿凛 · 18:04</small></div><span class="ksx-rank-heat">62.4 万播放</span><span class="ksx-rank-trend">— 持平</span></div>
+        <div class="ksx-rank-row"><span class="ksx-rank-no">03</span><div class="ksx-rank-title">旧厂房里的工业记忆之舞<small>老鹿 · 08:51</small></div><span class="ksx-rank-heat">48.9 万播放</span><span class="ksx-rank-trend">↑ 4</span></div>
+        <div class="ksx-rank-row"><span class="ksx-rank-no">04</span><div class="ksx-rank-title">《九点之后的排练厅》双人对舞<small>阿凛 · 11:32</small></div><span class="ksx-rank-heat">41.3 万播放</span><span class="ksx-rank-trend">↑ 1</span></div>
+        <div class="ksx-rank-row"><span class="ksx-rank-no">05</span><div class="ksx-rank-title">身体控制训练：从单点发力到整段稳定<small>夏柏 · 21:45</small></div><span class="ksx-rank-heat">37.5 万播放</span><span class="ksx-rank-trend">↓ 2</span></div>
+        <div class="ksx-rank-row"><span class="ksx-rank-no">06</span><div class="ksx-rank-title">对话夏柏：灵感是排练出来的<small>官网编辑部 · 24:16</small></div><span class="ksx-rank-heat">31.2 万播放</span><span class="ksx-rank-trend">↑ 3</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 用户评价 ============ -->
+  <section class="ksx-section" id="ksxReviews">
+    <div class="ksx-wrap">
+      <div class="ksx-sec-head">
+        <span class="ksx-kicker">Voice · 用户口碑</span>
+        <h2>他们这样 <em>评价</em> 这个品牌</h2>
+        <p>来自学习者、合作方与长期观众的反馈，内容不做筛选，保留不同的语气与角度。</p>
+      </div>
+      <div class="ksx-review-grid">
+        <article class="ksx-review">
+          <div class="ksx-review-top">
+            <span class="ksx-review-av" style="background:#c94b1d" aria-hidden="true">林</span>
+            <div><div class="ksx-review-name">林一舟</div><div class="ksx-review-when">3 天前 · 学习者</div></div>
+            <span class="ksx-stars" aria-label="五星">★★★★★</span>
+          </div>
+          <p>跟着阿凛的 Toprock 教程练了三周，第一次能在音乐里不数拍地跳完一段。最有用的是他把失败示范也放进去了，让我知道卡住是正常的。</p>
+          <div class="ksx-review-foot"><span>有用 214</span><span>回复 12</span></div>
+        </article>
+
+        <article class="ksx-review">
+          <div class="ksx-review-top">
+            <span class="ksx-review-av" style="background:#2c7a8c" aria-hidden="true">周</span>
+            <div><div class="ksx-review-name">周女士</div><div class="ksx-review-when">1 周前 · 家长</div></div>
+            <span class="ksx-stars" aria-label="四星半">★★★★☆</span>
+          </div>
+          <p>孩子喜欢看这里的作品，我比较在意动作安全。官网每个教程前面都有场地与热身提示，这点让我放心不少，希望以后能多出青少年版本。</p>
+          <div class="ksx-review-foot"><span>有用 186</span><span>回复 27</span></div>
+        </article>
+
+        <article class="ksx-review">
+          <div class="ksx-review-top">
+            <span class="ksx-review-av" style="background:#4a2a5e" aria-hidden="true">M</span>
+            <div><div class="ksx-review-name">Momo</div><div class="ksx-review-when">5 天前 · 同好</div></div>
+            <span class="ksx-stars" aria-label="五星">★★★★★</span>
+          </div>
+          <p>最喜欢《地板的回声》，没有过度包装，就是一群人在排练厅里死磕一个八拍。看完会想起自己刚开始学舞的那段时间，很真实。</p>
+          <div class="ksx-review-foot"><span>有用 153</span><span>回复 8</span></div>
+        </article>
+
+        <article class="ksx-review">
+          <div class="ksx-review-top">
+            <span class="ksx-review-av" style="background:#1f7a4d" aria-hidden="true">合</span>
+            <div><div class="ksx-review-name">某运动品牌内容负责人</div><div class="ksx-review-when">2 周前 · 合作方</div></div>
+            <span class="ksx-stars" aria-label="五星">★★★★★</span>
+          </div>
+          <p>合作前我们对比了几家街舞内容团队，最终选 ks舞团 夏柏 是因为他们的交付标准和沟通效率。成片、素材清单与授权文件都很完整，适合长期合作。</p>
+          <div class="ksx-review-foot"><span>有用 98</span><span>回复 4</span></div>
+        </article>
+
+        <article class="ksx-review">
+          <div class="ksx-review-top">
+            <span class="ksx-review-av" style="background:#c98600" aria-hidden="true">阿</span>
+            <div><div class="ksx-review-name">阿青</div><div class="ksx-review-when">6 天前 · 参赛者</div></div>
+            <span class="ksx-stars" aria-label="四星">★★★★☆</span>
+          </div>
+          <p>参加了线上挑战赛，报名流程很顺，上传后第二天就收到了评审的文字点评，虽然只拿了入围，但那段点评比奖杯更有用。</p>
+          <div class="ksx-review-foot"><span>有用 132</span><span>回复 15</span></div>
+        </article>
+
+        <article class="ksx-review">
+          <div class="ksx-review-top">
+            <span class="ksx-review-av" style="background:#3b4a6b" aria-hidden="true">播</span>
+            <div><div class="ksx-review-name">夜班主播</div><div class="ksx-review-when">4 天前 · 长期观众</div></div>
+            <span class="ksx-stars" aria-label="五星">★★★★★</span>
+          </div>
+          <p>做夜班的时候会把这里的长视频当背景，画质和声音都很稳，不像很多平台压得糊成一片。希望把往期访谈做成合集，方便一次看完。</p>
+          <div class="ksx-review-foot"><span>有用 77</span><span>回复 6</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 企业动态 + 合作墙 ============ -->
+  <section class="ksx-section" id="ksxNews">
+    <div class="ksx-wrap">
+      <div class="ksx-sec-head">
+        <span class="ksx-kicker">Updates · 企业动态</span>
+        <h2>官方发布与 <em>合作信息</em></h2>
+        <p>关于内容更新、赛事安排与合作伙伴的正式公告，都会在这里同步。</p>
+      </div>
+      <div class="ksx-split">
+        <ul class="ksx-news">
+          <li>
+            <span class="ksx-news-date">11.20</span>
+            <h3>年度企划《从地下到舞台》第 6 集上线<small>同步开放幕后花絮与创作手记下载，收录本期全部排练素材清单。</small></h3>
+            <span class="ksx-news-type">官方发布</span>
+          </li>
+          <li>
+            <span class="ksx-news-date">11.15</span>
+            <h3>「街角挑战赛」报名通道即将开启<small>本期指定音乐与规则说明已进入最终审核，预计 11 月 28 日开放上传。</small></h3>
+            <span class="ksx-news-type">赛事</span>
+          </li>
+          <li>
+            <span class="ksx-news-date">11.08</span>
+            <h3>与本地青年空间达成长期内容合作<small>未来一年将共同运营线下排练开放日，并向社区创作者提供拍摄支持。</small></h3>
+            <span class="ksx-news-type">合作</span>
+          </li>
+          <li>
+            <span class="ksx-news-date">10.30</span>
+            <h3>作品库完成画质升级，全部支持高清播放<small>早期作品重新调色并补录声音，观看体验更接近现场。</small></h3>
+            <span class="ksx-news-type">产品</span>
+          </li>
+        </ul>
+        <div>
+          <h3 style="font-size:16px;font-weight:900;margin-bottom:14px;">合作品牌与伙伴</h3>
+          <div class="ksx-partner-wall">
+            <div class="ksx-partner"><span class="ksx-partner-dot"></span>城市青年空间</div>
+            <div class="ksx-partner"><span class="ksx-partner-dot"></span>声场录音棚</div>
+            <div class="ksx-partner"><span class="ksx-partner-dot"></span>本地运动品牌</div>
+            <div class="ksx-partner"><span class="ksx-partner-dot"></span>街舞赛事联盟</div>
+            <div class="ksx-partner"><span class="ksx-partner-dot"></span>独立影像工作室</div>
+            <div class="ksx-partner"><span class="ksx-partner-dot"></span>社区文化中心</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="ksx-section" id="ksxFaq">
+    <div class="ksx-wrap">
+      <div class="ksx-sec-head">
+        <span class="ksx-kicker">Help · 常见问题</span>
+        <h2>关于 ks舞团 夏柏 的 <em>常见疑问</em></h2>
+        <p>如果你还有其他问题，可以通过页面底部的联系方式找到我们。</p>
+      </div>
+      <div class="ksx-faq">
+        <details>
+          <summary>官网的作品可以转载或二次使用吗？</summary>
+          <div class="ksx-faq-body">所有作品均为 ks舞团 夏柏 官方发布，版权归创作者与舞团共同所有。个人观看、学习与分享链接无需授权；商业用途、二次剪辑或嵌入其他平台，请先通过投稿与合作渠道提交申请，我们会在三个工作日内回复授权范围。</div>
+        </details>
+        <details>
+          <summary>完全没有基础，可以从哪一支视频开始看？</summary>
+          <div class="ksx-faq-body">建议从「教程」标签里的《Toprock 节拍拆解》开始，先解决听拍问题，再进入身体控制训练。每支教程末尾都有练习建议，按顺序跟练比一次看完更有效。练习前请务必热身，并选择平整、无障碍的场地。</div>
+        </details>
+        <details>
+          <summary>如何向 ks舞团 投稿自己的作品？</summary>
+          <div class="ksx-faq-body">点击导航中的「投稿报名」打开投稿表单，填写创作者信息、作品简介与文件链接即可。我们优先接收原创编舞、幕后纪实与城市影像类内容，画质建议 1080P 以上，并请附上动作安全说明。</div>
+        </details>
+        <details>
+          <summary>「街角挑战赛」的评审标准是什么？</summary>
+          <div class="ksx-faq-body">评审由舞团成员与特邀评委共同完成，主要看动作完成度、音乐理解与个人表达三部分，各占一定权重。所有参赛作品都会收到至少一条文字点评，结果在官网与社区同步公布，投票环节对全部注册用户开放。</div>
+        </details>
+        <details>
+          <summary>品牌合作怎么联系？可以定制内容吗？</summary>
+          <div class="ksx-faq-body">可以在投稿与合作表单中选择「品牌合作」，说明预算区间、目标受众与期望形式。我们提供编舞定制、影像拍摄、赛事运营与创作者联动四种合作方式，会根据需求给出可执行的方案与排期，不接受损害舞者权益的合作条件。</div>
+        </details>
+        <details>
+          <summary>为什么有些作品没有上传完整版？</summary>
+          <div class="ksx-faq-body">部分作品涉及合作方版权或参赛规则限制，只能上线片段。我们会在视频说明中标注可观看范围与完整版获取方式，绝不使用误导性标题。官网坚持正版与透明，这也是长期口碑的基础。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 投稿 CTA ============ -->
+  <section class="ksx-section-tight" id="ksxJoin">
+    <div class="ksx-wrap">
+      <div class="ksx-cta">
+        <div>
+          <h2>把你的舞，放进这个内容生态</h2>
+          <p>无论你是一位刚起步的舞者，还是希望与街舞文化建立真实连接的品牌，我们都欢迎一次认真的对话。投稿、报名、合作，从填写一张表单开始。</p>
+        </div>
+        <div class="ksx-hero-actions">
+          <button class="ksx-btn ksx-btn-primary ksx-open-submit">立即投稿</button>
+          <button class="ksx-btn ksx-btn-ghost" style="border-color:rgba(255,255,255,.5);color:#fff;" id="ksxCopyLink">复制本页链接</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="ksx-footer">
+  <div class="ksx-wrap">
+    <div class="ksx-footer-grid">
+      <div>
+        <div class="ksx-footer-brand">
+          <span class="ksx-brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 46 L32 16 L46 46 Z" fill="none" stroke="#ff5a1f" stroke-width="5" stroke-linejoin="round"/>
+              <circle cx="32" cy="38" r="4.5" fill="#ffb703"/>
+            </svg>
+          </span>
+          <span>
+            <span class="ksx-brand-name">ks舞团 <span>夏柏</span></span>
+            <span class="ksx-brand-sub">Official Video Portal</span>
+          </span>
+        </div>
+        <p>ks舞团 夏柏 官方网站 | 版权所有 | 持续运营中。我们专注于街舞原创内容与企业级影像服务，以正版、高清与专业为标准，为创作者与观众搭建值得信赖的视频社区。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#ksxVideos">原创作品库</a></li>
+          <li><a href="#ksxTopics">专题企划</a></li>
+          <li><a href="#ksxAuthors">创作者矩阵</a></li>
+          <li><a href="#ksxCharts">数据榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <ul>
+          <li><a href="#ksxJoin">作品投稿</a></li>
+          <li><a href="#ksxJoin">挑战赛报名</a></li>
+          <li><a href="#ksxNews">企业动态</a></li>
+          <li><a href="#ksxFaq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系</h4>
+        <ul>
+          <li>合作邮箱：hello@ks-xiaobai.example</li>
+          <li>工作时间：周一至周五 10:00–19:00</li>
+          <li>线下空间：城市青年空间三层排练厅</li>
+          <li><a href="#ksxReviews">用户口碑与反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ksx-footer-bottom">
+      <span>© 2026 ks舞团 夏柏 官方网站 · 保留所有权利</span>
+      <span class="ksx-footer-links">
+        <a href="#ksxHero">返回首页</a>
+        <a href="#ksxFaq">内容声明</a>
+        <span>备案号：示例备案 0000000 号</span>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ 弹窗：评论 ============ -->
+<div class="ksx-modal" id="ksxCommentModal" aria-hidden="true" role="dialog" aria-labelledby="ksxCommentTitle">
+  <div class="ksx-modal-card">
+    <button class="ksx-modal-close" data-ksx-close aria-label="关闭">×</button>
+    <h3 id="ksxCommentTitle">留下你的评论</h3>
+    <p>评论将展示在作品页面，请保持友善与具体。</p>
+    <form id="ksxCommentForm">
+      <div class="ksx-field">
+        <label for="ksxCommentName">昵称</label>
+        <input id="ksxCommentName" type="text" placeholder="例如：刚开始学舞的小林" required>
+      </div>
+      <div class="ksx-field">
+        <label for="ksxCommentBody">评论内容</label>
+        <textarea id="ksxCommentBody" placeholder="说说你最喜欢的一段动作，或者你的练习困惑" required></textarea>
+      </div>
+      <button class="ksx-btn ksx-btn-primary" type="submit">提交评论</button>
+    </form>
+  </div>
+</div>
+
+<!-- ============ 弹窗：投稿 ============ -->
+<div class="ksx-modal" id="ksxSubmitModal" aria-hidden="true" role="dialog" aria-labelledby="ksxSubmitTitle">
+  <div class="ksx-modal-card">
+    <button class="ksx-modal-close" data-ksx-close aria-label="关闭">×</button>
+    <h3 id="ksxSubmitTitle">投稿 / 合作登记</h3>
+    <p>填写基本信息，我们会通过你留下的联系方式回复。</p>
+    <form id="ksxSubmitForm">
+      <div class="ksx-field">
+        <label for="ksxSubmitName">称呼</label>
+        <input id="ksxSubmitName" type="text" placeholder="你的昵称或团队名称" required>
+      </div>
+      <div class="ksx-field">
+        <label for="ksxSubmitContact">联系方式</label>
+        <input id="ksxSubmitContact" type="text" placeholder="邮箱或常用社交账号" required>
+      </div>
+      <div class="ksx-field">
+        <label for="ksxSubmitType">投稿类型</label>
+        <select id="ksxSubmitType">
+          <option>原创编舞作品</option>
+          <option>教程与练习分享</option>
+          <option>城市影像 / 幕后纪实</option>
+          <option>挑战赛报名</option>
+          <option>品牌合作</option>
+        </select>
+      </div>
+      <div class="ksx-field">
+        <label for="ksxSubmitNote">作品说明</label>
+        <textarea id="ksxSubmitNote" placeholder="简单介绍作品内容、时长与拍摄设备"></textarea>
+      </div>
+      <button class="ksx-btn ksx-btn-dark" type="submit">提交登记</button>
+    </form>
+  </div>
+</div>
+
+<!-- ============ 弹窗：评分 ============ -->
+<div class="ksx-modal" id="ksxRateModal" aria-hidden="true" role="dialog" aria-labelledby="ksxRateTitle">
+  <div class="ksx-modal-card">
+    <button class="ksx-modal-close" data-ksx-close aria-label="关闭">×</button>
+    <h3 id="ksxRateTitle">给本期内容打个分</h3>
+    <p>你的评分会参与每周口碑榜的计算。</p>
+    <div class="ksx-modal-stars" id="ksxRateStars" aria-label="选择评分">
+      <span data-v="1">★</span><span data-v="2">★</span><span data-v="3">★</span><span data-v="4">★</span><span data-v="5">★</span>
+    </div>
+    <button class="ksx-btn ksx-btn-primary" id="ksxRateSubmit">提交评分</button>
+  </div>
+</div>
+
+<div class="ksx-toast" id="ksxToast" role="status" aria-live="polite"></div>
+<button class="ksx-top" id="ksxBackTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------- 移动端导航折叠 ---------- */
+  var burger = document.getElementById('ksxBurger');
+  var nav = document.getElementById('ksxNav');
+  if (burger && nav) {
+    burger.addEventListener('click', function () {
+      var open = nav.classList.toggle('ksx-mobile-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') {
+        nav.classList.remove('ksx-mobile-open');
+        burger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  /* ---------- Toast ---------- */
+  var toast = document.getElementById('ksxToast');
+  var toastTimer = null;
+  function showToast(msg) {
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('ksx-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () {
+      toast.classList.remove('ksx-show');
+    }, 2400);
+  }
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchIndex = [
+    { t: '《地板的回声》· 深夜排练全纪录', k: '夏柏 编舞 幕后' },
+    { t: 'Toprock 节拍拆解：从数拍到能跳', k: '阿凛 教程 基础' },
+    { t: '旧厂房里的工业记忆之舞', k: '老鹿 城市探索' },
+    { t: '《九点之后的排练厅》双人对舞', k: '阿凛 编舞' },
+    { t: '身体控制训练：从单点发力到整段稳定', k: '夏柏 教程 进阶' },
+    { t: '对话夏柏：灵感是排练出来的', k: '访谈 品牌故事' },
+    { t: '剪辑室里的十二分钟：怎么把排练变成作品', k: '幕后 小陈' },
+    { t: '从地下到舞台 · 专题企划', k: '专题 赛事' },
+    { t: '街角挑战赛 · 报名预告', k: '比赛 报名 挑战' },
+    { t: '创作者矩阵：ks舞团 夏柏 的合作舞者', k: '作者 创作者' }
+  ];
+  var input = document.getElementById('ksxSearchInput');
+  var hint = document.getElementById('ksxSearchHint');
+  var searchBtn = document.getElementById('ksxSearchBtn');
+
+  function renderHint(kw) {
+    if (!hint) return;
+    var q = (kw || '').trim().toLowerCase();
+    var list = q
+      ? searchIndex.filter(function (it) {
+          return (it.t + ' ' + it.k).toLowerCase().indexOf(q) !== -1;
+        })
+      : searchIndex.slice(0, 5);
+    if (!list.length) {
+      hint.innerHTML = '<div class="ksx-search-empty">未找到相关作品，试试「教程」「编舞」「夏柏」</div>';
+    } else {
+      hint.innerHTML = list.slice(0, 6).map(function (it) {
+        return '<p>' + it.t + '<span>' + it.k + '</span></p>';
+      }).join('');
+    }
+    hint.classList.add('ksx-open');
+  }
+
+  if (input && hint) {
+    input.addEventListener('input', function () {
+      renderHint(input.value);
+    });
+    input.addEventListener('focus', function () {
+      renderHint(input.value);
+    });
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        doSearch();
+      }
+    });
+    document.addEventListener('click', function (e) {
+      if (!hint.contains(e.target) && e.target !== input && e.target !== searchBtn) {
+        hint.classList.remove('ksx-open');
+      }
+    });
+  }
+  function doSearch() {
+    if (!input || !hint) return;
+    var q = input.value.trim();
+    if (!q) {
+      showToast('请输入关键词，例如「教程」或「夏柏」');
+      renderHint('');
+      return;
+    }
+    var found = searchIndex.filter(function (it) {
+      return (it.t + ' ' + it.k).toLowerCase().indexOf(q.toLowerCase()) !== -1;
+    });
+    if (found.length) {
+      showToast('找到 ' + found.length + ' 个相关结果：' + found[0].t);
+      hint.classList.remove('ksx-open');
+      var target = document.getElementById('ksxVideos');
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      showToast('没有匹配结果，可尝试「教程」「编舞」「幕后」');
+      renderHint(q);
+    }
+  }
+  if (searchBtn) searchBtn.addEventListener('click', doSearch);
+
+  /* ---------- 标签筛选 ---------- */
+  var filterBtns = document.querySelectorAll('.ksx-filter');
+  var videoCards = document.querySelectorAll('#ksxVideoGrid .ksx-video-card');
+  Array.prototype.forEach.call(filterBtns, function (btn) {
+    btn.addEventListener('click', function () {
+      Array.prototype.forEach.call(filterBtns, function (b) {
+        b.classList.remove('ksx-on');
+      });
+      btn.classList.add('ksx-on');
+      var f = btn.getAttribute('data-filter');
+      var visible = 0;
+      Array.prototype.forEach.call(videoCards, function (card) {
+        var tags = card.getAttribute('data-tags') || '';
+        var show = f === 'all' || tags.indexOf(f) !== -1;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      showToast(f === 'all' ? '已显示全部作品' : '筛选「' + btn.textContent.trim() + '」，共 ' + visible + ' 支');
+    });
+  });
+
+  /* ---------- 点赞 ---------- */
+  function formatNum(n) {
+    if (n >= 10000) return (n / 10000).toFixed(1) + ' 万';
+    if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
+    return String(n);
+  }
+  var likeBtns = document.querySelectorAll('.ksx-like');
+  Array.prototype.forEach.call(likeBtns, function (btn) {
+    btn.addEventListener('click', function () {
+      var base = parseInt(btn.getAttribute('data-count'), 10) || 0;
+      var on = btn.classList.toggle('ksx-on');
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      var num = on ? base + 1 : base;
+      var span = btn.querySelector('span');
+      if (span) span.textContent = formatNum(num);
+      showToast(on ? '已点赞，感谢你的支持' : '已取消点赞');
+    });
+  });
+
+  /* ---------- 收藏切换 ---------- */
+  var favBtns = document.querySelectorAll('.ksx-fav');
+  Array.prototype.forEach.call(favBtns, function (btn) {
+    btn.addEventListener('click', function () {
+      var on = btn.classList.toggle('ksx-on');
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      var span = btn.querySelector('span');
+      if (span) span.textContent = on ? '已收藏' : '收藏';
+      showToast(on ? '已加入收藏，可在个人页查看' : '已取消收藏');
+    });
+  });
+
+  /* ---------- 弹窗通用 ---------- */
+  var modals = document.querySelectorAll('.ksx-modal');
+  function openModal(id) {
+    var m = document.getElementById(id);
+    if (!m) return;
+    m.classList.add('ksx-open');
+    m.setAttribute('aria-hidden', 'false');
+  }
+  function closeModal(m) {
+    m.classList.remove('ksx-open');
+    m.setAttribute('aria-hidden', 'true');
+  }
+  Array.prototype.forEach.call(modals, function (m) {
+    m.addEventListener('click', function (e) {
+      if (e.target === m || e.target.hasAttribute('data-ksx-close')) {
+        closeModal(m);
+      }
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      Array.prototype.forEach.call(modals, function (m) {
+        if (m.classList.contains('ksx-open')) closeModal(m);
+      });
+      if (hint) hint.classList.remove('ksx-open');
+    }
+  });
+
+  /* ---------- 评论弹窗 ---------- */
+  var commentBtns = document.querySelectorAll('.ksx-comment-open');
+  Array.prototype.forEach.call(commentBtns, function (b) {
+    b.addEventListener('click', function () {
+      openModal('ksxCommentModal');
+    });
+  });
+  var commentForm = document.getElementById('ksxCommentForm');
+  if (commentForm) {
+    commentForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      closeModal(document.getElementById('ksxCommentModal'));
+      showToast('评论已提交，审核通过后展示在作品页');
+      commentForm.reset();
+    });
+  }
+
+  /* ---------- 投稿弹窗 ---------- */
+  var submitBtns = document.querySelectorAll('.ksx-open-submit');
+  Array.prototype.forEach.call(submitBtns, function (b) {
+    b.addEventListener('click', function () {
+      openModal('ksxSubmitModal');
+    });
+  });
+  var submitForm = document.getElementById('ksxSubmitForm');
+  if (submitForm) {
+    submitForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      closeModal(document.getElementById('ksxSubmitModal'));
+      showToast('登记成功，我们会在三个工作日内与你联系');
+      submitForm.reset();
+    });
+  }
+
+  /* ---------- 分享弹窗（评分入口） ---------- */
+  var shareBtns = document.querySelectorAll('.ksx-share');
+  Array.prototype.forEach.call(shareBtns, function (b) {
+    b.addEventListener('click', function () {
+      openModal('ksxRateModal');
+    });
+  });
+  var rateStars = document.querySelectorAll('#ksxRateStars span');
+  var rateVal = 0;
+  Array.prototype.forEach.call(rateStars, function (s) {
+    s.addEventListener('click', function () {
+      rateVal = parseInt(s.getAttribute('data-v'), 10);
+      Array.prototype.forEach.call(rateStars, function (x) {
+        var v = parseInt(x.getAttribute('data-v'), 10);
+        x.classList.toggle('ksx-lit', v <= rateVal);
+      });
+    });
+  });
+  var rateSubmit = document.getElementById('ksxRateSubmit');
+  if (rateSubmit) {
+    rateSubmit.addEventListener('click', function () {
+      if (!rateVal) {
+        showToast('请先选择星级评分');
+        return;
+      }
+      closeModal(document.getElementById('ksxRateModal'));
+      showToast('已提交 ' + rateVal + ' 星评价，感谢反馈');
+      rateVal = 0;
+      Array.prototype.forEach.call(rateStars, function (x) {
+        x.classList.remove('ksx-lit');
+      });
+    });
+  }
+
+  /* ---------- 复制链接 ---------- */
+  var copyBtn = document.getElementById('ksxCopyLink');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function () {
+      var url = window.location.href;
+      function done() { showToast('链接已复制，可分享给同好'); }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(done).catch(function () {
+          showToast('复制失败，请手动复制地址栏链接');
+        });
+      } else {
+        try {
+          var ta = document.createElement('textarea');
+          ta.value = url;
+          ta.style.position = 'fixed';
+          ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          done();
+        } catch (err) {
+          showToast('复制失败，请手动复制地址栏链接');
+        }
+      }
+    });
+  }
+
+  /* ---------- 榜单切换 ---------- */
+  var rankData = {
+    hot: [
+      ['《地板的回声》· 深夜排练全纪录', '夏柏 · 12:48', '128.6 万播放', '↑ 2'],
+      ['Toprock 节拍拆解：从数拍到能跳', '阿凛 · 18:04', '62.4 万播放', '— 持平'],
+      ['旧厂房里的工业记忆之舞', '老鹿 · 08:51', '48.9 万播放', '↑ 4'],
+      ['《九点之后的排练厅》双人对舞', '阿凛 · 11:32', '41.3 万播放', '↑ 1'],
+      ['身体控制训练：从单点发力到整段稳定', '夏柏 · 21:45', '37.5 万播放', '↓ 2'],
+      ['对话夏柏：灵感是排练出来的', '官网编辑部 · 24:16', '31.2 万播放', '↑ 3']
+    ],
+    new: [
+      ['小禾的第一支完整作品：从跟不上到跳完', '小禾 · 09:20', '12.7 万播放', 'NEW'],
+      ['夜跑之后的一段即兴', '小禾 · 04:18', '8.3 万播放', 'NEW'],
+      ['新人合练记录：三个人第一次对齐八拍', '阿凛 · 13:06', '7.9 万播放', '↑ 1'],
+      ['练习室里的一百次重来', '小禾 · 06:42', '6.5 万播放', '↑ 3'],
+      ['街角五分钟：下班后的身体日记', '阿听 · 05:11', '5.2 万播放', 'NEW'],
+      ['阿听的声音现场：脚步与鼓点', '阿听 · 10:04', '4.8 万播放', '— 持平']
+    ],
+    rate: [
+      ['《地板的回声》· 深夜排练全纪录', '夏柏 · 12:48', '口碑 9.8', '★★★★★'],
+      ['Toprock 节拍拆解：从数拍到能跳', '阿凛 · 18:04', '口碑 9.6', '★★★★★'],
+      ['对话夏柏：灵感是排练出来的', '官网编辑部 · 24:16', '口碑 9.4', '★★★★☆'],
+      ['旧厂房里的工业记忆之舞', '老鹿 · 08:51', '口碑 9.2', '★★★★☆'],
+      ['剪辑室里的十二分钟', '剪辑室小陈 · 15:07', '口碑 9.1', '★★★★☆'],
+      ['身体控制训练', '夏柏 · 21:45', '口碑 9.0', '★★★★☆']
+    ]
+  };
+  var rankTabs = document.querySelectorAll('.ksx-rank-tab');
+  var rankList = document.getElementById('ksxRankList');
+  function renderRank(key) {
+    var data = rankData[key];
+    if (!rankList || !data) return;
+    rankList.innerHTML = data.map(function (row, i) {
+      return '<div class="ksx-rank-row">' +
+        '<span class="ksx-rank-no">' + String(i + 1).padStart(2, '0') + '</span>' +
+        '<div class="ksx-rank-title">' + row[0] + '<small>' + row[1] + '</small></div>' +
+        '<span class="ksx-rank-heat">' + row[2] + '</span>' +
+        '<span class="ksx-rank-trend">' + row[3] + '</span>' +
+        '</div>';
+    }).join('');
+  }
+  Array.prototype.forEach.call(rankTabs, function (tab) {
+    tab.addEventListener('click', function () {
+      Array.prototype.forEach.call(rankTabs, function (t) {
+        t.classList.remove('ksx-active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('ksx-active');
+      tab.setAttribute('aria-selected', 'true');
+      renderRank(tab.getAttribute('data-rank'));
+    });
+  });
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = document.querySelectorAll('[data-ksx-count]');
+  var counted = false;
+  function runCounters() {
+    if (counted) return;
+    counted = true;
+    Array.prototype.forEach.call(counters, function (el) {
+      var target = parseInt(el.getAttribute('data-ksx-count'), 10) || 0;
+      var start = 0;
+      var dur = 1100;
+      var t0 = null;
+      function step(ts) {
+        if (!t0) t0 = ts;
+        var p = Math.min((ts - t0) / dur, 1);
+        var ease = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(start + (target - start) * ease).toLocaleString('zh-CN');
+        if (p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if ('IntersectionObserver' in window && counters.length) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          runCounters();
+          io.disconnect();
+        }
+      });
+    }, { threshold: 0.35 });
+    io.observe(counters[0]);
+  } else {
+    runCounters();
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById('ksxBackTop');
+  function onScroll() {
+    if (!topBtn) return;
+    if (window.scrollY > 520) {
+      topBtn.classList.add('ksx-show');
+    } else {
+      topBtn.classList.remove('ksx-show');
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (topBtn) {
+    topBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  /* ---------- 吸顶高度补偿 ---------- */
+  function syncSticky() {
+    var stack = document.getElementById('ksxStickyStack');
+    if (!stack) return;
+    var h = stack.offsetHeight;
+    document.documentElement.style.setProperty('--ksx-sticky', h + 'px');
+    document.documentElement.style.scrollPaddingTop = (h + 16) + 'px';
+  }
+  syncSticky();
+  window.addEventListener('resize', syncSticky);
+  window.addEventListener('load', syncSticky);
+})();
+</script>
+</body>
+                                               </html>
